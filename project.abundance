@@ -14,43 +14,11 @@
             "x": 0.98,
             "y": 0.5,
             "uniqueID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b",
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": ""
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
-        },
-        {
-            "atomType": "RegularPolygon",
-            "name": "RegularPolygon",
-            "x": 0.47513227513227513,
-            "y": 0.52,
-            "uniqueID": "57cf41a3-330d-4b45-81f9-6bf182f936b9",
-            "ioValues": [
-                {
-                    "name": "number of sides",
-                    "ioValue": 7
-                },
-                {
-                    "name": "diameter",
-                    "ioValue": 10
-                }
-            ],
-            "description": "Creates a new regular polygon. Corners are on the diameter."
         }
     ],
-    "allConnectors": [
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap2Primary": false,
-            "ap1ID": "57cf41a3-330d-4b45-81f9-6bf182f936b9",
-            "ap2ID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b"
-        },
-        null
-    ],
+    "allConnectors": [],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
