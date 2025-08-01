@@ -25,8 +25,8 @@
         {
             "atomType": "RegularPolygon",
             "name": "RegularPolygon",
-            "x": 0.2962566844919786,
-            "y": 0.4732142857142857,
+            "x": 0.2823529411764706,
+            "y": 0.23809523809523808,
             "uniqueID": "6f45207e-861d-461d-b95a-bfcd1612ce72",
             "ioValues": [
                 {
@@ -39,15 +39,56 @@
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
+        },
+        {
+            "atomType": "RegularPolygon",
+            "name": "RegularPolygon",
+            "x": 0.23315508021390374,
+            "y": 0.6160714285714285,
+            "uniqueID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
+            "ioValues": [
+                {
+                    "name": "number of sides",
+                    "ioValue": 6
+                },
+                {
+                    "name": "diameter",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new regular polygon. Corners are on the diameter."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.5700534759358289,
+            "y": 0.7648809523809523,
+            "uniqueID": "559eef58-87bc-4695-a27d-05963b30875e",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negative."
         }
     ],
     "allConnectors": [
         {
             "ap1Name": "geometry",
             "ap2Name": "number or geometry",
-            "ap2Primary": false,
             "ap1ID": "6f45207e-861d-461d-b95a-bfcd1612ce72",
             "ap2ID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
+            "ap2ID": "559eef58-87bc-4695-a27d-05963b30875e"
         }
     ],
     "unitsKey": "MM",
