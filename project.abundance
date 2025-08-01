@@ -11,8 +11,8 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.9754010695187165,
-            "y": 0.5087719298245614,
+            "x": 0.986096256684492,
+            "y": 0.4415204678362573,
             "uniqueID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b",
             "ioValues": [
                 {
@@ -25,17 +25,17 @@
         {
             "atomType": "RegularPolygon",
             "name": "RegularPolygon",
-            "x": 0.281283422459893,
-            "y": 0.7222222222222222,
+            "x": 0.32727272727272727,
+            "y": 0.4824561403508772,
             "uniqueID": "6f45207e-861d-461d-b95a-bfcd1612ce72",
             "ioValues": [
                 {
                     "name": "number of sides",
-                    "ioValue": 4
+                    "ioValue": 7
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 11
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
