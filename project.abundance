@@ -4,7 +4,12 @@
     "x": 0,
     "y": 0,
     "uniqueID": "e55760ad-ad0f-4dd8-b80b-98f5dee6cd04",
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "Input",
+            "ioValue": 10
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
     "allAtoms": [
@@ -75,6 +80,16 @@
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negative."
+        },
+        {
+            "atomType": "Input",
+            "name": "Input",
+            "x": 0.025384615384615384,
+            "y": 0.431547619047619,
+            "uniqueID": "13718f5b-c463-4dd8-a8bf-e4139bfc264f",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
         }
     ],
     "allConnectors": [
