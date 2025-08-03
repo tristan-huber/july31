@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Input",
-            "ioValue": 10
+            "ioValue": 45
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -22,7 +22,7 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "6f45207e-861d-461d-b95a-bfcd1612ce72"
+                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -95,15 +95,21 @@
     "allConnectors": [
         {
             "ap1Name": "geometry",
-            "ap2Name": "number or geometry",
-            "ap1ID": "6f45207e-861d-461d-b95a-bfcd1612ce72",
-            "ap2ID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b"
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap1ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
             "ap2ID": "559eef58-87bc-4695-a27d-05963b30875e"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap1ID": "559eef58-87bc-4695-a27d-05963b30875e",
+            "ap2ID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap1ID": "13718f5b-c463-4dd8-a8bf-e4139bfc264f",
+            "ap2ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3"
         }
     ],
     "unitsKey": "MM",
