@@ -31,7 +31,7 @@
             "ioValues": [
                 {
                     "name": "number of sides",
-                    "ioValue": 4
+                    "ioValue": 3
                 },
                 {
                     "name": "diameter",
