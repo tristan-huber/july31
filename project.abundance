@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Input",
-            "ioValue": 45
+            "ioValue": 40
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -53,7 +53,7 @@
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 40
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -85,9 +85,41 @@
             "ioValues": [],
             "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.43722943722943725,
+            "y": 0.3197831978319783,
+            "uniqueID": "6ad12517-2a79-4850-bcf6-65ec16343a00",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 10
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
+            "ap2ID": "6ad12517-2a79-4850-bcf6-65ec16343a00"
+        },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
