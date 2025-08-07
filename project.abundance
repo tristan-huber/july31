@@ -7,7 +7,7 @@
     "ioValues": [
         {
             "name": "Input",
-            "ioValue": 41
+            "ioValue": 40
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -58,7 +58,7 @@
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 41
+                    "ioValue": 40
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
