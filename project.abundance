@@ -16,15 +16,10 @@
         {
             "atomType": "Output",
             "name": "Output",
-            "x": 0.986096256684492,
-            "y": 0.4415204678362573,
+            "x": 0.8650793650793651,
+            "y": 0.43902439024390244,
             "uniqueID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b",
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
-                }
-            ],
+            "ioValues": [],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
