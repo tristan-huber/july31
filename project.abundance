@@ -179,12 +179,14 @@
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
+                    "ap2Primary": false,
                     "ap1ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c",
                     "ap2ID": "9f9d507e-3da6-4de1-885d-f2896e8c8ff2"
                 },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "number of sides",
+                    "ap2Primary": false,
                     "ap1ID": "691073b8-8bd4-408e-933f-20281be9aff7",
                     "ap2ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c"
                 }
@@ -197,30 +199,34 @@
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
             "ap2ID": "6ad12517-2a79-4850-bcf6-65ec16343a00"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
             "ap2ID": "559eef58-87bc-4695-a27d-05963b30875e"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "number or geometry",
+            "ap2Primary": false,
             "ap1ID": "559eef58-87bc-4695-a27d-05963b30875e",
             "ap2ID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b"
         },
         {
             "ap1Name": "number or geometry",
             "ap2Name": "diameter",
+            "ap2Primary": false,
             "ap1ID": "13718f5b-c463-4dd8-a8bf-e4139bfc264f",
             "ap2ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3"
         }
     ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
-    "compiledBom": {},
+    "compiledBom": [],
     "filetypeVersion": 1
 }
