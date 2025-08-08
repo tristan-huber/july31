@@ -40,7 +40,7 @@
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 100
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -193,13 +193,29 @@
             "compiledBom": {}
         },
         {
-            "atomType": "Assembly",
-            "name": "Assembly",
-            "x": 0.6464646464646465,
-            "y": 0.33035714285714285,
-            "uniqueID": "f790cfb0-b88d-4e3c-8352-3c7b521b134f",
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.15728715728715728,
+            "y": 0.27380952380952384,
+            "uniqueID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ioValues": [],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+            "description": "Defines a mathematical constant.",
+            "value": 100
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.5923520923520923,
+            "y": 0.20238095238095238,
+            "uniqueID": "734d130d-a153-4108-a57d-4f868e25d3a3",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00"
+                }
+            ],
+            "description": "Changes the color of the shape.",
+            "selectedColorIndex": 14
         }
     ],
     "allConnectors": [
@@ -226,6 +242,18 @@
             "ap2Name": "diameter",
             "ap1ID": "13718f5b-c463-4dd8-a8bf-e4139bfc264f",
             "ap2ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "6ad12517-2a79-4850-bcf6-65ec16343a00",
+            "ap2ID": "734d130d-a153-4108-a57d-4f868e25d3a3"
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "diameter",
+            "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
+            "ap2ID": "6f45207e-861d-461d-b95a-bfcd1612ce72"
         }
     ],
     "unitsKey": "MM",
