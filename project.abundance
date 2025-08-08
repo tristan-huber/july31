@@ -229,7 +229,7 @@
                     "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
                 },
                 {
-                    "name": "Shape 3",
+                    "name": "Shape 4",
                     "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
                 }
             ],
@@ -320,6 +320,7 @@
                 }
             ],
             "description": "Extracts geometry containing the specified tag.",
+            "tag": "t1",
             "tagIndex": 0
         },
         {
@@ -466,15 +467,15 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "Shape 3",
-            "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
-            "ap2ID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
             "ap2ID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 4",
+            "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
+            "ap2ID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
         },
         {
             "ap1Name": "geometry",
