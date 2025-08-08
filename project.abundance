@@ -313,9 +313,14 @@
             "x": 0.5656565656565656,
             "y": 0.9226190476190476,
             "uniqueID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "input",
+                    "ioValue": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
+                }
+            ],
             "description": "Extracts geometry containing the specified tag.",
-            "tag": "",
+            "tag": "t1",
             "tagIndex": 0
         }
     ],
@@ -403,6 +408,12 @@
             "ap2Name": "Shape 4",
             "ap1ID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
             "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "input",
+            "ap1ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f",
+            "ap2ID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c"
         }
     ],
     "unitsKey": "MM",
