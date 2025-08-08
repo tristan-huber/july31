@@ -216,6 +216,61 @@
             ],
             "description": "Changes the color of the shape.",
             "selectedColorIndex": 18
+        },
+        {
+            "atomType": "Fusion",
+            "name": "Fusion",
+            "x": 0.766955266955267,
+            "y": 0.39285714285714285,
+            "uniqueID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
+            "unionType": "Fusion"
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.5930735930735931,
+            "y": 0.5178571428571428,
+            "uniqueID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "9760dc0a-1938-4bac-9738-762e9b3c73c2"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 20
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negative."
+        },
+        {
+            "atomType": "Difference",
+            "name": "Difference",
+            "x": 0.7727272727272727,
+            "y": 0.8035714285714286,
+            "uniqueID": "f4d9538d-a793-4766-91e0-68fb5f615ac8",
+            "ioValues": [
+                {
+                    "name": "geometry1",
+                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                }
+            ],
+            "description": "Subtracts shape two from shape one."
         }
     ],
     "allConnectors": [
@@ -238,6 +293,18 @@
             "ap2ID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b"
         },
         {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap1ID": "559eef58-87bc-4695-a27d-05963b30875e",
+            "ap2ID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap1ID": "559eef58-87bc-4695-a27d-05963b30875e",
+            "ap2ID": "f4d9538d-a793-4766-91e0-68fb5f615ac8"
+        },
+        {
             "ap1Name": "number or geometry",
             "ap2Name": "diameter",
             "ap1ID": "13718f5b-c463-4dd8-a8bf-e4139bfc264f",
@@ -250,10 +317,28 @@
             "ap2ID": "734d130d-a153-4108-a57d-4f868e25d3a3"
         },
         {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
+            "ap2ID": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+        },
+        {
             "ap1Name": "number",
             "ap2Name": "diameter",
             "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ap2ID": "6f45207e-861d-461d-b95a-bfcd1612ce72"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
+            "ap2ID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
+            "ap2ID": "f4d9538d-a793-4766-91e0-68fb5f615ac8"
         }
     ],
     "unitsKey": "MM",
