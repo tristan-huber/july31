@@ -48,8 +48,8 @@
         {
             "atomType": "RegularPolygon",
             "name": "RegularPolygon",
-            "x": 0.23315508021390374,
-            "y": 0.6160714285714285,
+            "x": 0.09235209235209235,
+            "y": 0.6845238095238095,
             "uniqueID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
             "ioValues": [
                 {
@@ -94,8 +94,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.43722943722943725,
-            "y": 0.3197831978319783,
+            "x": 0.2756132756132756,
+            "y": 0.4375,
             "uniqueID": "6ad12517-2a79-4850-bcf6-65ec16343a00",
             "ioValues": [
                 {
@@ -104,11 +104,11 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 10
+                    "ioValue": 0
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": 10
                 },
                 {
                     "name": "zDist",
@@ -205,8 +205,8 @@
         {
             "atomType": "Color",
             "name": "Color",
-            "x": 0.5923520923520923,
-            "y": 0.20238095238095238,
+            "x": 0.5548340548340548,
+            "y": 0.1279761904761905,
             "uniqueID": "734d130d-a153-4108-a57d-4f868e25d3a3",
             "ioValues": [
                 {
@@ -275,8 +275,8 @@
         {
             "atomType": "Tag",
             "name": "t1",
-            "x": 0.3102453102453102,
-            "y": 0.8095238095238095,
+            "x": 0.2784992784992785,
+            "y": 0.8898809523809524,
             "uniqueID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
             "ioValues": [
                 {
@@ -320,7 +320,6 @@
                 }
             ],
             "description": "Extracts geometry containing the specified tag.",
-            "tag": "t1",
             "tagIndex": 0
         }
     ],
