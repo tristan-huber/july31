@@ -104,7 +104,7 @@
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 0
+                    "ioValue": 20
                 },
                 {
                     "name": "yDist",
@@ -112,7 +112,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 2
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -120,8 +120,8 @@
         {
             "atomType": "Molecule",
             "name": "Molecule",
-            "x": 0.4632034632034632,
-            "y": 0.5474254742547425,
+            "x": 0.38383838383838387,
+            "y": 0.5,
             "uniqueID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
             "ioValues": [
                 {
@@ -220,8 +220,8 @@
         {
             "atomType": "Fusion",
             "name": "Fusion",
-            "x": 0.7662337662337662,
-            "y": 0.2767857142857143,
+            "x": 0.7395382395382395,
+            "y": 0.5446428571428571,
             "uniqueID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c",
             "ioValues": [
                 {
@@ -239,8 +239,8 @@
         {
             "atomType": "Extrude",
             "name": "Extrude",
-            "x": 0.5930735930735931,
-            "y": 0.5178571428571428,
+            "x": 0.4588744588744589,
+            "y": 0.45833333333333337,
             "uniqueID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
             "ioValues": [
                 {
@@ -321,6 +321,68 @@
             ],
             "description": "Extracts geometry containing the specified tag.",
             "tagIndex": 0
+        },
+        {
+            "atomType": "Intersection",
+            "name": "Intersection",
+            "x": 0.774891774891775,
+            "y": 0.27380952380952384,
+            "uniqueID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4",
+            "ioValues": [
+                {
+                    "name": "geometry1",
+                    "ioValue": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2"
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
+                }
+            ],
+            "description": "The space shared by two shapes."
+        },
+        {
+            "atomType": "Rotate",
+            "name": "Rotate",
+            "x": 0.6255411255411255,
+            "y": 0.19047619047619047,
+            "uniqueID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                },
+                {
+                    "name": "x-axis degrees",
+                    "ioValue": 0
+                },
+                {
+                    "name": "y-axis degrees",
+                    "ioValue": 40
+                },
+                {
+                    "name": "z-axis degrees",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+        },
+        {
+            "atomType": "Rectangle",
+            "name": "Rectangle",
+            "x": 0.38816738816738816,
+            "y": 0.10416666666666667,
+            "uniqueID": "586aa55a-725c-450a-9c4d-f4baadf279d1",
+            "ioValues": [
+                {
+                    "name": "x length",
+                    "ioValue": 10
+                },
+                {
+                    "name": "y length",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Creates a new rectangle."
         }
     ],
     "allConnectors": [
@@ -359,6 +421,12 @@
             "ap2Name": "geometry1",
             "ap1ID": "559eef58-87bc-4695-a27d-05963b30875e",
             "ap2ID": "f4d9538d-a793-4766-91e0-68fb5f615ac8"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry2",
+            "ap1ID": "559eef58-87bc-4695-a27d-05963b30875e",
+            "ap2ID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4"
         },
         {
             "ap1Name": "number or geometry",
@@ -404,6 +472,12 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
+            "ap2ID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2"
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "Shape 4",
             "ap1ID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
             "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
@@ -413,6 +487,12 @@
             "ap2Name": "input",
             "ap1ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f",
             "ap2ID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry1",
+            "ap1ID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
+            "ap2ID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4"
         }
     ],
     "unitsKey": "MM",
