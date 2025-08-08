@@ -220,14 +220,10 @@
         {
             "atomType": "Fusion",
             "name": "Fusion",
-            "x": 0.766955266955267,
-            "y": 0.39285714285714285,
+            "x": 0.7662337662337662,
+            "y": 0.2767857142857143,
             "uniqueID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c",
             "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
-                },
                 {
                     "name": "Shape 2",
                     "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
@@ -327,12 +323,6 @@
             "ap2Name": "diameter",
             "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ap2ID": "6f45207e-861d-461d-b95a-bfcd1612ce72"
-        },
-        {
-            "ap1Name": "geometry",
-            "ap2Name": "Shape 1",
-            "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
-            "ap2ID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
         },
         {
             "ap1Name": "geometry",
