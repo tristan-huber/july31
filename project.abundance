@@ -227,6 +227,10 @@
                 {
                     "name": "Shape 2",
                     "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -267,6 +271,61 @@
                 }
             ],
             "description": "Subtracts shape two from shape one."
+        },
+        {
+            "atomType": "Tag",
+            "name": "t1",
+            "x": 0.3102453102453102,
+            "y": 0.8095238095238095,
+            "uniqueID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3"
+                }
+            ],
+            "description": "Tags geometry so that it can be extracted later.",
+            "tags": [
+                "t1"
+            ]
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.42784992784992787,
+            "y": 0.886904761904762,
+            "uniqueID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f"
+                },
+                {
+                    "name": "Shape 2",
+                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00"
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.4891774891774892,
+            "y": 0.9107142857142856,
+            "uniqueID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
+            "ioValues": [
+                {
+                    "name": "input",
+                    "ioValue": ""
+                },
+                {
+                    "name": "output",
+                    "ioValue": ""
+                }
+            ],
+            "description": "Extracts geometry containing the specified tag.",
+            "tag": "",
+            "tagIndex": 0
         }
     ],
     "allConnectors": [
@@ -281,6 +340,12 @@
             "ap2Name": "geometry",
             "ap1ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
             "ap2ID": "559eef58-87bc-4695-a27d-05963b30875e"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
+            "ap2ID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f"
         },
         {
             "ap1Name": "geometry",
@@ -313,6 +378,12 @@
             "ap2ID": "734d130d-a153-4108-a57d-4f868e25d3a3"
         },
         {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 2",
+            "ap1ID": "6ad12517-2a79-4850-bcf6-65ec16343a00",
+            "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
+        },
+        {
             "ap1Name": "geometry or number",
             "ap2Name": "geometry",
             "ap1ID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
@@ -329,6 +400,18 @@
             "ap2Name": "geometry2",
             "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
             "ap2ID": "f4d9538d-a793-4766-91e0-68fb5f615ac8"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
+            "ap2ID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap1ID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
+            "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
         }
     ],
     "unitsKey": "MM",
