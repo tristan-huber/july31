@@ -58,7 +58,7 @@
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 40
+                    "ioValue": 10
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
