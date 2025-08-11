@@ -387,7 +387,7 @@
         },
         {
             "atomType": "Equation",
-            "name": "x / 20",
+            "name": "x / y",
             "x": 0.19141193595342068,
             "y": 0.13855421686746988,
             "uniqueID": "94fdbdfd-6114-4693-8e36-14be454ecf31",
@@ -395,10 +395,14 @@
                 {
                     "name": "x",
                     "ioValue": 100
+                },
+                {
+                    "name": "y",
+                    "ioValue": 10
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x / 20"
+            "currentEquation": "x / y"
         }
     ],
     "allConnectors": [
