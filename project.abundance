@@ -257,8 +257,8 @@
         {
             "atomType": "Difference",
             "name": "Difference",
-            "x": 0.7727272727272727,
-            "y": 0.8035714285714286,
+            "x": 0.74235807860262,
+            "y": 0.825301204819277,
             "uniqueID": "f4d9538d-a793-4766-91e0-68fb5f615ac8",
             "ioValues": [
                 {
@@ -326,8 +326,8 @@
         {
             "atomType": "Intersection",
             "name": "Intersection",
-            "x": 0.774891774891775,
-            "y": 0.27380952380952384,
+            "x": 0.7219796215429404,
+            "y": 0.2168674698795181,
             "uniqueID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4",
             "ioValues": [
                 {
@@ -393,16 +393,87 @@
             "uniqueID": "94fdbdfd-6114-4693-8e36-14be454ecf31",
             "ioValues": [
                 {
-                    "name": "y",
-                    "ioValue": 11
-                },
-                {
                     "name": "b",
                     "ioValue": 22
+                },
+                {
+                    "name": "y",
+                    "ioValue": 11
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
             "currentEquation": "b / y"
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.8187772925764192,
+            "y": 0.35240963855421686,
+            "uniqueID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "2c03a76f-133d-4d8a-a6a4-578d142a16d4"
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": "26066f41-69aa-4913-bcff-bc99d9a99ac2"
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.8129548762736535,
+            "y": 0.7018072289156627,
+            "uniqueID": "26066f41-69aa-4913-bcff-bc99d9a99ac2",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "f4d9538d-a793-4766-91e0-68fb5f615ac8"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 80
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.9155749636098981,
+            "y": 0.6837349397590361,
+            "uniqueID": "879a4ffe-34bb-4978-8dd0-2a01af18dbd2",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
+                },
+                {
+                    "name": "Sheet Width",
+                    "ioValue": 1219
+                },
+                {
+                    "name": "Sheet Height",
+                    "ioValue": 2438
+                },
+                {
+                    "name": "Part Padding",
+                    "ioValue": 6
+                }
+            ],
+            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
+            "placements": []
         }
     ],
     "allConnectors": [
@@ -504,6 +575,12 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "f4d9538d-a793-4766-91e0-68fb5f615ac8",
+            "ap2ID": "26066f41-69aa-4913-bcff-bc99d9a99ac2"
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "Shape 5",
             "ap1ID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
             "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
@@ -516,6 +593,12 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap1ID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4",
+            "ap2ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "geometry1",
             "ap1ID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
             "ap2ID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4"
@@ -525,6 +608,18 @@
             "ap2Name": "number of sides",
             "ap1ID": "94fdbdfd-6114-4693-8e36-14be454ecf31",
             "ap2ID": "6f45207e-861d-461d-b95a-bfcd1612ce72"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
+            "ap2ID": "879a4ffe-34bb-4978-8dd0-2a01af18dbd2"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap1ID": "26066f41-69aa-4913-bcff-bc99d9a99ac2",
+            "ap2ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
         }
     ],
     "unitsKey": "MM",
