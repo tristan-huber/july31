@@ -120,13 +120,13 @@
         {
             "atomType": "Molecule",
             "name": "Molecule",
-            "x": 0.38383838383838387,
-            "y": 0.5,
+            "x": 0.39592430858806404,
+            "y": 0.4879518072289156,
             "uniqueID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
             "ioValues": [
                 {
                     "name": "sides",
-                    "ioValue": 10
+                    "ioValue": 22
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -155,7 +155,7 @@
                     "ioValues": [
                         {
                             "name": "number of sides",
-                            "ioValue": 10
+                            "ioValue": 22
                         },
                         {
                             "name": "diameter",
@@ -591,6 +591,12 @@
             "ap2Name": "b",
             "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ap2ID": "94fdbdfd-6114-4693-8e36-14be454ecf31"
+        },
+        {
+            "ap1Name": "number",
+            "ap2Name": "sides",
+            "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
+            "ap2ID": "9760dc0a-1938-4bac-9738-762e9b3c73c2"
         },
         {
             "ap1Name": "geometry",
