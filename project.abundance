@@ -94,8 +94,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.2756132756132756,
-            "y": 0.4375,
+            "x": 0.2780203784570597,
+            "y": 0.5,
             "uniqueID": "6ad12517-2a79-4850-bcf6-65ec16343a00",
             "ioValues": [
                 {
@@ -307,6 +307,14 @@
                 {
                     "name": "Shape 6",
                     "ioValue": "57f581b8-c64f-4fec-8975-9d097d36fb5e"
+                },
+                {
+                    "name": "Shape 7",
+                    "ioValue": "6f45207e-861d-461d-b95a-bfcd1612ce72"
+                },
+                {
+                    "name": "Shape 8",
+                    "ioValue": "cbb6ca67-4376-472f-aa0b-14b249e8ebdf"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -324,7 +332,6 @@
                 }
             ],
             "description": "Extracts geometry containing the specified tag.",
-            "tag": "t1",
             "tagIndex": 0
         },
         {
@@ -501,8 +508,8 @@
         {
             "atomType": "Import",
             "name": "Import",
-            "x": 0.1091703056768559,
-            "y": 0.8674698795180724,
+            "x": 0.1331877729257642,
+            "y": 0.41566265060240964,
             "uniqueID": "57f581b8-c64f-4fec-8975-9d097d36fb5e",
             "ioValues": [],
             "description": "Import Atom, let's you choose a type of file to import and use in your design.",
@@ -514,6 +521,12 @@
         }
     ],
     "allConnectors": [
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 7",
+            "ap1ID": "6f45207e-861d-461d-b95a-bfcd1612ce72",
+            "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
+        },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
@@ -645,6 +658,12 @@
             "ap2Name": "geometry1",
             "ap1ID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
             "ap2ID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 8",
+            "ap1ID": "cbb6ca67-4376-472f-aa0b-14b249e8ebdf",
+            "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
         },
         {
             "ap1Name": "result",
