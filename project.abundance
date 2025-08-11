@@ -36,7 +36,7 @@
             "ioValues": [
                 {
                     "name": "number of sides",
-                    "ioValue": 6
+                    "ioValue": 10
                 },
                 {
                     "name": "diameter",
@@ -195,8 +195,8 @@
         {
             "atomType": "Constant",
             "name": "Constant",
-            "x": 0.15728715728715728,
-            "y": 0.27380952380952384,
+            "x": 0.07787481804949054,
+            "y": 0.2560240963855422,
             "uniqueID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ioValues": [],
             "description": "Defines a mathematical constant.",
@@ -384,6 +384,21 @@
                 }
             ],
             "description": "Creates a new rectangle."
+        },
+        {
+            "atomType": "Equation",
+            "name": "x / 20",
+            "x": 0.19141193595342068,
+            "y": 0.13855421686746988,
+            "uniqueID": "94fdbdfd-6114-4693-8e36-14be454ecf31",
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 100
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "x / 20"
         }
     ],
     "allConnectors": [
@@ -460,6 +475,12 @@
             "ap2ID": "6f45207e-861d-461d-b95a-bfcd1612ce72"
         },
         {
+            "ap1Name": "number",
+            "ap2Name": "x",
+            "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
+            "ap2ID": "94fdbdfd-6114-4693-8e36-14be454ecf31"
+        },
+        {
             "ap1Name": "geometry",
             "ap2Name": "geometry2",
             "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
@@ -494,6 +515,12 @@
             "ap2Name": "geometry1",
             "ap1ID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
             "ap2ID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4"
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "number of sides",
+            "ap1ID": "94fdbdfd-6114-4693-8e36-14be454ecf31",
+            "ap2ID": "6f45207e-861d-461d-b95a-bfcd1612ce72"
         }
     ],
     "unitsKey": "MM",
