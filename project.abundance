@@ -303,6 +303,10 @@
                 {
                     "name": "Shape 5",
                     "ioValue": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f"
+                },
+                {
+                    "name": "Shape 6",
+                    "ioValue": "57f581b8-c64f-4fec-8975-9d097d36fb5e"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -320,7 +324,6 @@
                 }
             ],
             "description": "Extracts geometry containing the specified tag.",
-            "tag": "t1",
             "tagIndex": 0
         },
         {
@@ -478,14 +481,14 @@
         {
             "atomType": "Import",
             "name": "Import",
-            "x": 0.1615720524017467,
-            "y": 0.42168674698795183,
+            "x": 0.1091703056768559,
+            "y": 0.8674698795180724,
             "uniqueID": "57f581b8-c64f-4fec-8975-9d097d36fb5e",
             "ioValues": [],
             "description": "Import Atom, let's you choose a type of file to import and use in your design.",
             "fileName": "ExportTest(3)_copy1.svg",
             "type": "SVG",
-            "SVGwidth": 10,
+            "SVGwidth": 80,
             "repoOwner": "tristan-huber",
             "repoName": "july31"
         }
@@ -634,6 +637,12 @@
             "ap2Name": "Shape 3",
             "ap1ID": "26066f41-69aa-4913-bcff-bc99d9a99ac2",
             "ap2ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 6",
+            "ap1ID": "57f581b8-c64f-4fec-8975-9d097d36fb5e",
+            "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
         }
     ],
     "unitsKey": "MM",
