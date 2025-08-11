@@ -474,6 +474,20 @@
             ],
             "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
             "placements": []
+        },
+        {
+            "atomType": "Import",
+            "name": "Import",
+            "x": 0.1615720524017467,
+            "y": 0.42168674698795183,
+            "uniqueID": "57f581b8-c64f-4fec-8975-9d097d36fb5e",
+            "ioValues": [],
+            "description": "Import Atom, let's you choose a type of file to import and use in your design.",
+            "fileName": "ExportTest(3)_copy1.svg",
+            "type": "SVG",
+            "SVGwidth": 10,
+            "repoOwner": "tristan-huber",
+            "repoName": "july31"
         }
     ],
     "allConnectors": [
