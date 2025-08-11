@@ -36,11 +36,11 @@
             "ioValues": [
                 {
                     "name": "number of sides",
-                    "ioValue": 10
+                    "ioValue": 2
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 100
+                    "ioValue": 22
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -200,7 +200,7 @@
             "uniqueID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ioValues": [],
             "description": "Defines a mathematical constant.",
-            "value": 100
+            "value": 22
         },
         {
             "atomType": "Color",
@@ -387,22 +387,22 @@
         },
         {
             "atomType": "Equation",
-            "name": "x / y",
+            "name": "b / y",
             "x": 0.19141193595342068,
             "y": 0.13855421686746988,
             "uniqueID": "94fdbdfd-6114-4693-8e36-14be454ecf31",
             "ioValues": [
                 {
-                    "name": "x",
-                    "ioValue": 100
+                    "name": "y",
+                    "ioValue": 11
                 },
                 {
-                    "name": "y",
-                    "ioValue": 10
+                    "name": "b",
+                    "ioValue": 22
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "x / y"
+            "currentEquation": "b / y"
         }
     ],
     "allConnectors": [
@@ -480,7 +480,7 @@
         },
         {
             "ap1Name": "number",
-            "ap2Name": "x",
+            "ap2Name": "b",
             "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ap2ID": "94fdbdfd-6114-4693-8e36-14be454ecf31"
         },
