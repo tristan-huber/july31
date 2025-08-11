@@ -30,13 +30,13 @@
         {
             "atomType": "RegularPolygon",
             "name": "RegularPolygon",
-            "x": 0.2816593886462882,
-            "y": 0.19879518072289157,
+            "x": 0.29767103347889373,
+            "y": 0.21987951807228914,
             "uniqueID": "6f45207e-861d-461d-b95a-bfcd1612ce72",
             "ioValues": [
                 {
                     "name": "number of sides",
-                    "ioValue": 2
+                    "ioValue": 22
                 },
                 {
                     "name": "diameter",
@@ -391,7 +391,7 @@
         },
         {
             "atomType": "Equation",
-            "name": "b / y",
+            "name": "b * y",
             "x": 0.19141193595342068,
             "y": 0.13855421686746988,
             "uniqueID": "94fdbdfd-6114-4693-8e36-14be454ecf31",
@@ -402,11 +402,11 @@
                 },
                 {
                     "name": "y",
-                    "ioValue": 11
+                    "ioValue": 1
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-            "currentEquation": "b / y"
+            "currentEquation": "b * y"
         },
         {
             "atomType": "Assembly",
@@ -477,7 +477,26 @@
                 }
             ],
             "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
-            "placements": []
+            "placements": [
+                [
+                    {
+                        "id": 1,
+                        "rotate": 120,
+                        "translate": {
+                            "x": 20.5205078838406,
+                            "y": 23.199999694364614
+                        }
+                    },
+                    {
+                        "id": 0,
+                        "rotate": 60,
+                        "translate": {
+                            "x": 7.298310408170103,
+                            "y": 47.68856479206637
+                        }
+                    }
+                ]
+            ]
         },
         {
             "atomType": "Import",
