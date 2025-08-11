@@ -30,8 +30,8 @@
         {
             "atomType": "RegularPolygon",
             "name": "RegularPolygon",
-            "x": 0.2823529411764706,
-            "y": 0.23809523809523808,
+            "x": 0.2816593886462882,
+            "y": 0.19879518072289157,
             "uniqueID": "6f45207e-861d-461d-b95a-bfcd1612ce72",
             "ioValues": [
                 {
@@ -324,6 +324,7 @@
                 }
             ],
             "description": "Extracts geometry containing the specified tag.",
+            "tag": "t1",
             "tagIndex": 0
         },
         {
