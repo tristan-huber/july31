@@ -187,6 +187,28 @@
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                     "currentEquation": "x / y"
+                },
+                {
+                    "atomType": "Move",
+                    "name": "Move",
+                    "x": 0.696577243293247,
+                    "y": 0.7485714285714287,
+                    "uniqueID": "9c080535-3de9-4b7a-bb07-02aa3d9e6f14",
+                    "ioValues": [
+                        {
+                            "name": "xDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "yDist",
+                            "ioValue": 0
+                        },
+                        {
+                            "name": "zDist",
+                            "ioValue": 0
+                        }
+                    ],
+                    "description": "Moves a shape laterally in X, Y, Z."
                 }
             ],
             "allConnectors": [
@@ -286,7 +308,7 @@
         },
         {
             "atomType": "Tag",
-            "name": "t1",
+            "name": "t2",
             "x": 0.2784992784992785,
             "y": 0.8898809523809524,
             "uniqueID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
@@ -298,7 +320,7 @@
             ],
             "description": "Tags geometry so that it can be extracted later.",
             "tags": [
-                "t1"
+                "t2"
             ]
         },
         {
@@ -511,6 +533,28 @@
             "SVGwidth": 80,
             "repoOwner": "tristan-huber",
             "repoName": "july31"
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.8954671600370028,
+            "y": 0.8657142857142858,
+            "uniqueID": "93403945-5357-47b2-8c1a-c1dd17aff667",
+            "ioValues": [
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
@@ -633,6 +677,12 @@
             "ap2Name": "input",
             "ap1ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f",
             "ap2ID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c"
+        },
+        {
+            "ap1Name": "output",
+            "ap2Name": "geometry",
+            "ap1ID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
+            "ap2ID": "93403945-5357-47b2-8c1a-c1dd17aff667"
         },
         {
             "ap1Name": "geometry",
