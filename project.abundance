@@ -35,10 +35,6 @@
             "uniqueID": "6f45207e-861d-461d-b95a-bfcd1612ce72",
             "ioValues": [
                 {
-                    "name": "number of sides",
-                    "ioValue": 22
-                },
-                {
                     "name": "diameter",
                     "ioValue": 22
                 }
@@ -54,7 +50,7 @@
             "ioValues": [
                 {
                     "name": "number of sides",
-                    "ioValue": 6
+                    "ioValue": 5
                 },
                 {
                     "name": "diameter",
@@ -148,10 +144,6 @@
                     "y": 0.5257452574525745,
                     "uniqueID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c",
                     "ioValues": [
-                        {
-                            "name": "number of sides",
-                            "ioValue": 4.4
-                        },
                         {
                             "name": "diameter",
                             "ioValue": 10
@@ -250,12 +242,7 @@
             "x": 0.5548340548340548,
             "y": 0.1279761904761905,
             "uniqueID": "734d130d-a153-4108-a57d-4f868e25d3a3",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00"
-                }
-            ],
+            "ioValues": [],
             "description": "Changes the color of the shape.",
             "selectedColorIndex": 18
         },
@@ -312,12 +299,7 @@
             "x": 0.2784992784992785,
             "y": 0.8898809523809524,
             "uniqueID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00"
-                }
-            ],
+            "ioValues": [],
             "description": "Tags geometry so that it can be extracted later.",
             "tags": [
                 "t2"
@@ -332,15 +314,15 @@
             "ioValues": [
                 {
                     "name": "Shape 7",
-                    "ioValue": "6f45207e-861d-461d-b95a-bfcd1612ce72"
+                    "ioValue": null
                 },
                 {
                     "name": "Shape 8",
-                    "ioValue": "cbb6ca67-4376-472f-aa0b-14b249e8ebdf"
+                    "ioValue": null
                 },
                 {
                     "name": "Shape 9",
-                    "ioValue": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f"
+                    "ioValue": null
                 },
                 {
                     "name": "Shape 10",
@@ -355,12 +337,7 @@
             "x": 0.5656565656565656,
             "y": 0.9226190476190476,
             "uniqueID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
-            "ioValues": [
-                {
-                    "name": "input",
-                    "ioValue": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
-                }
-            ],
+            "ioValues": [],
             "description": "Extracts geometry containing the specified tag.",
             "tag": "t1",
             "tagIndex": 0
