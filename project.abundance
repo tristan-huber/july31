@@ -28,7 +28,12 @@
             "x": 0.29767103347889373,
             "y": 0.21987951807228914,
             "uniqueID": "6f45207e-861d-461d-b95a-bfcd1612ce72",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 22
+                }
+            ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
         },
         {
@@ -44,7 +49,7 @@
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 40
+                    "ioValue": 10
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -109,7 +114,12 @@
             "x": 0.39592430858806404,
             "y": 0.4879518072289156,
             "uniqueID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "sides",
+                    "ioValue": 22
+                }
+            ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
@@ -129,6 +139,10 @@
                     "y": 0.5257452574525745,
                     "uniqueID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c",
                     "ioValues": [
+                        {
+                            "name": "number of sides",
+                            "ioValue": null
+                        },
                         {
                             "name": "diameter",
                             "ioValue": 10
@@ -155,7 +169,7 @@
                     "ioValues": [
                         {
                             "name": "y",
-                            "ioValue": 5
+                            "ioValue": 2
                         }
                     ],
                     "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -384,6 +398,10 @@
             "y": 0.13855421686746988,
             "uniqueID": "94fdbdfd-6114-4693-8e36-14be454ecf31",
             "ioValues": [
+                {
+                    "name": "b",
+                    "ioValue": 22
+                },
                 {
                     "name": "y",
                     "ioValue": 1
