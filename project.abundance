@@ -129,7 +129,7 @@
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 8
                 }
             ],
             "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -154,6 +154,10 @@
                         {
                             "name": "number of sides",
                             "ioValue": 4.4
+                        },
+                        {
+                            "name": "diameter",
+                            "ioValue": 8
                         }
                     ],
                     "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -188,28 +192,6 @@
                     "currentEquation": "x / y"
                 },
                 {
-                    "atomType": "Move",
-                    "name": "Move",
-                    "x": 0.696577243293247,
-                    "y": 0.7485714285714287,
-                    "uniqueID": "9c080535-3de9-4b7a-bb07-02aa3d9e6f14",
-                    "ioValues": [
-                        {
-                            "name": "xDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "yDist",
-                            "ioValue": 0
-                        },
-                        {
-                            "name": "zDist",
-                            "ioValue": 0
-                        }
-                    ],
-                    "description": "Moves a shape laterally in X, Y, Z."
-                },
-                {
                     "atomType": "Input",
                     "name": "diameter",
                     "x": 0.025384615384615384,
@@ -220,18 +202,22 @@
                     "type": "number"
                 },
                 {
-                    "atomType": "Circle",
-                    "name": "Circle",
-                    "x": 0.5387293298520452,
-                    "y": 0.33714285714285713,
-                    "uniqueID": "3ffbdc8a-8b63-4bb5-a164-1c5e8fca52de",
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.5874673629242819,
+                    "y": 0.3028571428571429,
+                    "uniqueID": "6f945564-7129-4d8e-8c11-c5416bdb7e90",
                     "ioValues": [
                         {
-                            "name": "diameter",
+                            "name": "x length",
+                            "ioValue": 10
+                        },
+                        {
+                            "name": "y length",
                             "ioValue": 10
                         }
                     ],
-                    "description": "Creates a new circle."
+                    "description": "Creates a new rectangle."
                 }
             ],
             "allConnectors": [
