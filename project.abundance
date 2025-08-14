@@ -6,7 +6,7 @@
     "uniqueID": "e55760ad-ad0f-4dd8-b80b-98f5dee6cd04",
     "ioValues": [
         {
-            "name": "Input",
+            "name": "Input (1)",
             "ioValue": 40
         }
     ],
@@ -19,7 +19,12 @@
             "x": 0.9834054834054835,
             "y": 0.4092140921409214,
             "uniqueID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -129,7 +134,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "9f9d507e-3da6-4de1-885d-f2896e8c8ff2",
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c"
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -141,7 +151,7 @@
                     "ioValues": [
                         {
                             "name": "number of sides",
-                            "ioValue": null
+                            "ioValue": 11
                         },
                         {
                             "name": "diameter",
@@ -167,6 +177,10 @@
                     "y": 0.2921686746987952,
                     "uniqueID": "28217c61-b2cf-43d1-a003-bcdf90a0511d",
                     "ioValues": [
+                        {
+                            "name": "x",
+                            "ioValue": 22
+                        },
                         {
                             "name": "y",
                             "ioValue": 2
@@ -254,7 +268,7 @@
                 },
                 {
                     "name": "Shape 4",
-                    "ioValue": null
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -267,6 +281,10 @@
             "y": 0.45833333333333337,
             "uniqueID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "9760dc0a-1938-4bac-9738-762e9b3c73c2"
+                },
                 {
                     "name": "height",
                     "ioValue": 20
@@ -284,6 +302,10 @@
                 {
                     "name": "geometry1",
                     "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
                 }
             ],
             "description": "Subtracts shape two from shape one."
@@ -358,6 +380,10 @@
             "y": 0.19047619047619047,
             "uniqueID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                },
                 {
                     "name": "x-axis degrees",
                     "ioValue": 0
@@ -527,6 +553,26 @@
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Input",
+            "name": "Input (1)",
+            "x": 0.025384615384615384,
+            "y": 0.8799999999999999,
+            "uniqueID": "cb1f356c-613c-4030-9ad8-1ef1b553be6a",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Constant",
+            "name": "Constant",
+            "x": 0.1409921671018277,
+            "y": 0.9057142857142857,
+            "uniqueID": "bc8e9345-f64a-48f1-ae57-f05a21419fd6",
+            "ioValues": [],
+            "description": "Defines a mathematical constant.",
+            "value": 10
         }
     ],
     "allConnectors": [
