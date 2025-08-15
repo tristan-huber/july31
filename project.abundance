@@ -23,7 +23,12 @@
             "x": 0.9834054834054835,
             "y": 0.4092140921409214,
             "uniqueID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
+                }
+            ],
             "description": "Connect geometry here to make it available in the next level up. "
         },
         {
@@ -35,11 +40,11 @@
             "ioValues": [
                 {
                     "name": "number of sides",
-                    "ioValue": 22
+                    "ioValue": 20
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 22
+                    "ioValue": 20
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -125,7 +130,7 @@
             "ioValues": [
                 {
                     "name": "sides",
-                    "ioValue": 22
+                    "ioValue": 20
                 },
                 {
                     "name": "diameter",
@@ -141,7 +146,12 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "9f9d507e-3da6-4de1-885d-f2896e8c8ff2",
-                    "ioValues": [],
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c"
+                        }
+                    ],
                     "description": "Connect geometry here to make it available in the next level up. "
                 },
                 {
@@ -153,7 +163,7 @@
                     "ioValues": [
                         {
                             "name": "number of sides",
-                            "ioValue": 4.4
+                            "ioValue": 4
                         },
                         {
                             "name": "diameter",
@@ -181,7 +191,7 @@
                     "ioValues": [
                         {
                             "name": "x",
-                            "ioValue": 22
+                            "ioValue": 20
                         },
                         {
                             "name": "y",
@@ -257,7 +267,7 @@
             "uniqueID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ioValues": [],
             "description": "Defines a mathematical constant.",
-            "value": 22
+            "value": 20
         },
         {
             "atomType": "Color",
@@ -287,7 +297,7 @@
                 },
                 {
                     "name": "Shape 4",
-                    "ioValue": null
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
@@ -300,6 +310,10 @@
             "y": 0.45833333333333337,
             "uniqueID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "9760dc0a-1938-4bac-9738-762e9b3c73c2"
+                },
                 {
                     "name": "height",
                     "ioValue": 20
@@ -317,6 +331,10 @@
                 {
                     "name": "geometry1",
                     "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
                 }
             ],
             "description": "Subtracts shape two from shape one."
@@ -388,6 +406,10 @@
             "uniqueID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4",
             "ioValues": [
                 {
+                    "name": "geometry1",
+                    "ioValue": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2"
+                },
+                {
                     "name": "geometry2",
                     "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
                 }
@@ -401,6 +423,10 @@
             "y": 0.19047619047619047,
             "uniqueID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                },
                 {
                     "name": "x-axis degrees",
                     "ioValue": 0
@@ -443,7 +469,7 @@
             "ioValues": [
                 {
                     "name": "b",
-                    "ioValue": 22
+                    "ioValue": 20
                 },
                 {
                     "name": "y",
@@ -462,11 +488,11 @@
             "ioValues": [
                 {
                     "name": "Shape 1",
-                    "ioValue": null
+                    "ioValue": "2c03a76f-133d-4d8a-a6a4-578d142a16d4"
                 },
                 {
                     "name": "Shape 3",
-                    "ioValue": null
+                    "ioValue": "26066f41-69aa-4913-bcff-bc99d9a99ac2"
                 }
             ],
             "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
@@ -478,6 +504,10 @@
             "y": 0.7018072289156627,
             "uniqueID": "26066f41-69aa-4913-bcff-bc99d9a99ac2",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "f4d9538d-a793-4766-91e0-68fb5f615ac8"
+                },
                 {
                     "name": "xDist",
                     "ioValue": 80
@@ -500,6 +530,10 @@
             "y": 0.6837349397590361,
             "uniqueID": "879a4ffe-34bb-4978-8dd0-2a01af18dbd2",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
+                },
                 {
                     "name": "Sheet Width",
                     "ioValue": 1219
