@@ -234,24 +234,28 @@
                 {
                     "ap1Name": "geometry",
                     "ap2Name": "number or geometry",
+                    "ap2Primary": false,
                     "ap1ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c",
                     "ap2ID": "9f9d507e-3da6-4de1-885d-f2896e8c8ff2"
                 },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "x",
+                    "ap2Primary": false,
                     "ap1ID": "691073b8-8bd4-408e-933f-20281be9aff7",
                     "ap2ID": "28217c61-b2cf-43d1-a003-bcdf90a0511d"
                 },
                 {
                     "ap1Name": "result",
                     "ap2Name": "number of sides",
+                    "ap2Primary": false,
                     "ap1ID": "28217c61-b2cf-43d1-a003-bcdf90a0511d",
                     "ap2ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c"
                 },
                 {
                     "ap1Name": "number or geometry",
                     "ap2Name": "diameter",
+                    "ap2Primary": false,
                     "ap1ID": "cea58c6a-7c02-49ba-a6e9-7ed8d57795ae",
                     "ap2ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c"
                 }
@@ -388,12 +392,7 @@
             "x": 0.5656565656565656,
             "y": 0.9226190476190476,
             "uniqueID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
-            "ioValues": [
-                {
-                    "name": "input",
-                    "ioValue": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
-                }
-            ],
+            "ioValues": [],
             "description": "Extracts geometry containing the specified tag.",
             "tag": "t2",
             "tagIndex": 0
@@ -575,11 +574,15 @@
             "x": 0.1331877729257642,
             "y": 0.41566265060240964,
             "uniqueID": "57f581b8-c64f-4fec-8975-9d097d36fb5e",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "SVG Width",
+                    "ioValue": 5
+                }
+            ],
             "description": "Import Atom, let's you choose a type of file to import and use in your design.",
             "fileName": "ExportTest(3)_copy1.svg",
             "type": "SVG",
-            "SVGwidth": 80,
             "repoOwner": "tristan-huber",
             "repoName": "july31"
         },
@@ -634,168 +637,189 @@
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 7",
+            "ap2Primary": false,
             "ap1ID": "6f45207e-861d-461d-b95a-bfcd1612ce72",
             "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
             "ap2ID": "6ad12517-2a79-4850-bcf6-65ec16343a00"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
             "ap2ID": "559eef58-87bc-4695-a27d-05963b30875e"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 2",
+            "ap2Primary": false,
             "ap1ID": "559eef58-87bc-4695-a27d-05963b30875e",
             "ap2ID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry1",
+            "ap2Primary": false,
             "ap1ID": "559eef58-87bc-4695-a27d-05963b30875e",
             "ap2ID": "f4d9538d-a793-4766-91e0-68fb5f615ac8"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry2",
+            "ap2Primary": false,
             "ap1ID": "559eef58-87bc-4695-a27d-05963b30875e",
             "ap2ID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4"
         },
         {
             "ap1Name": "number or geometry",
             "ap2Name": "diameter",
+            "ap2Primary": false,
             "ap1ID": "13718f5b-c463-4dd8-a8bf-e4139bfc264f",
             "ap2ID": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "6ad12517-2a79-4850-bcf6-65ec16343a00",
             "ap2ID": "734d130d-a153-4108-a57d-4f868e25d3a3"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "6ad12517-2a79-4850-bcf6-65ec16343a00",
             "ap2ID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f"
         },
         {
-            "ap1Name": "geometry or number",
+            "ap1Name": "Geometry",
             "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
             "ap2ID": "2a591e99-8011-47fb-a79f-002900a5ee7c"
         },
         {
             "ap1Name": "number",
             "ap2Name": "diameter",
+            "ap2Primary": false,
             "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ap2ID": "6f45207e-861d-461d-b95a-bfcd1612ce72"
         },
         {
             "ap1Name": "number",
             "ap2Name": "b",
+            "ap2Primary": false,
             "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ap2ID": "94fdbdfd-6114-4693-8e36-14be454ecf31"
         },
         {
             "ap1Name": "number",
             "ap2Name": "sides",
+            "ap2Primary": false,
             "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ap2ID": "9760dc0a-1938-4bac-9738-762e9b3c73c2"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "number or geometry",
+            "ap2Primary": false,
             "ap1ID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c",
             "ap2ID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry2",
+            "ap2Primary": false,
             "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
             "ap2ID": "f4d9538d-a793-4766-91e0-68fb5f615ac8"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
             "ap2ID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 4",
+            "ap2Primary": false,
             "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
             "ap2ID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "f4d9538d-a793-4766-91e0-68fb5f615ac8",
             "ap2ID": "26066f41-69aa-4913-bcff-bc99d9a99ac2"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 9",
+            "ap2Primary": false,
             "ap1ID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
             "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "input",
-            "ap1ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f",
-            "ap2ID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c"
-        },
-        {
-            "ap1Name": "output",
             "ap2Name": "geometry",
+            "ap2Primary": true,
             "ap1ID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
             "ap2ID": "93403945-5357-47b2-8c1a-c1dd17aff667"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 1",
+            "ap2Primary": false,
             "ap1ID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4",
             "ap2ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry1",
+            "ap2Primary": false,
             "ap1ID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
             "ap2ID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 8",
+            "ap2Primary": false,
             "ap1ID": "cbb6ca67-4376-472f-aa0b-14b249e8ebdf",
             "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
         },
         {
             "ap1Name": "result",
             "ap2Name": "number of sides",
+            "ap2Primary": false,
             "ap1ID": "94fdbdfd-6114-4693-8e36-14be454ecf31",
             "ap2ID": "6f45207e-861d-461d-b95a-bfcd1612ce72"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
+            "ap2Primary": false,
             "ap1ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
             "ap2ID": "879a4ffe-34bb-4978-8dd0-2a01af18dbd2"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 3",
+            "ap2Primary": false,
             "ap1ID": "26066f41-69aa-4913-bcff-bc99d9a99ac2",
             "ap2ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
         },
         {
             "ap1Name": "geometry",
             "ap2Name": "Shape 10",
+            "ap2Primary": false,
             "ap1ID": "57f581b8-c64f-4fec-8975-9d097d36fb5e",
             "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
         }
