@@ -57,7 +57,7 @@
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 10
+                    "ioValue": 40
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -377,7 +377,7 @@
                 }
             ],
             "description": "Extracts geometry containing the specified tag.",
-            "tag": "t1",
+            "tag": "t2",
             "tagIndex": 0
         },
         {
@@ -552,10 +552,14 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.8954671600370028,
-            "y": 0.8657142857142858,
+            "x": 0.8704427083333334,
+            "y": 0.8714285714285714,
             "uniqueID": "93403945-5357-47b2-8c1a-c1dd17aff667",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c"
+                },
                 {
                     "name": "xDist",
                     "ioValue": 0
