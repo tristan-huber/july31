@@ -7,11 +7,13 @@
     "ioValues": [
         {
             "name": "Input (1)",
-            "ioValue": 40
+            "ioValue": 40,
+            "currentEquation": null
         },
         {
             "name": "Input (1)",
-            "ioValue": 40
+            "ioValue": 40,
+            "currentEquation": null
         }
     ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
@@ -26,7 +28,8 @@
             "ioValues": [
                 {
                     "name": "number or geometry",
-                    "ioValue": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c"
+                    "ioValue": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c",
+                    "currentEquation": null
                 }
             ],
             "description": "Connect geometry here to make it available in the next level up. "
@@ -40,11 +43,13 @@
             "ioValues": [
                 {
                     "name": "number of sides",
-                    "ioValue": 20
+                    "ioValue": 20,
+                    "currentEquation": null
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 20
+                    "ioValue": 20,
+                    "currentEquation": null
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -58,11 +63,13 @@
             "ioValues": [
                 {
                     "name": "number of sides",
-                    "ioValue": 5
+                    "ioValue": 5,
+                    "currentEquation": null
                 },
                 {
                     "name": "diameter",
-                    "ioValue": 40
+                    "ioValue": 40,
+                    "currentEquation": null
                 }
             ],
             "description": "Creates a new regular polygon. Corners are on the diameter."
@@ -76,11 +83,13 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3"
+                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
+                    "currentEquation": null
                 },
                 {
                     "name": "height",
-                    "ioValue": 10
+                    "ioValue": 10,
+                    "currentEquation": null
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negative."
@@ -104,160 +113,26 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3"
+                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
+                    "currentEquation": null
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 20
+                    "ioValue": 20,
+                    "currentEquation": null
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 10
+                    "ioValue": 10,
+                    "currentEquation": null
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 2
+                    "ioValue": 2,
+                    "currentEquation": null
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "Molecule",
-            "name": "Molecule",
-            "x": 0.39592430858806404,
-            "y": 0.4879518072289156,
-            "uniqueID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
-            "ioValues": [
-                {
-                    "name": "sides",
-                    "ioValue": 20
-                },
-                {
-                    "name": "diameter",
-                    "ioValue": 8
-                }
-            ],
-            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
-            "topLevel": false,
-            "allAtoms": [
-                {
-                    "atomType": "Output",
-                    "name": "Output",
-                    "x": 0.98,
-                    "y": 0.5,
-                    "uniqueID": "9f9d507e-3da6-4de1-885d-f2896e8c8ff2",
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c"
-                        }
-                    ],
-                    "description": "Connect geometry here to make it available in the next level up. "
-                },
-                {
-                    "atomType": "RegularPolygon",
-                    "name": "RegularPolygon",
-                    "x": 0.31746031746031744,
-                    "y": 0.5257452574525745,
-                    "uniqueID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c",
-                    "ioValues": [
-                        {
-                            "name": "number of sides",
-                            "ioValue": 4
-                        },
-                        {
-                            "name": "diameter",
-                            "ioValue": 8
-                        }
-                    ],
-                    "description": "Creates a new regular polygon. Corners are on the diameter."
-                },
-                {
-                    "atomType": "Input",
-                    "name": "sides",
-                    "x": 0.025384615384615384,
-                    "y": 0.3956639566395664,
-                    "uniqueID": "691073b8-8bd4-408e-933f-20281be9aff7",
-                    "ioValues": [],
-                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
-                    "type": "number"
-                },
-                {
-                    "atomType": "Equation",
-                    "name": "x / y",
-                    "x": 0.24963609898107714,
-                    "y": 0.2921686746987952,
-                    "uniqueID": "28217c61-b2cf-43d1-a003-bcdf90a0511d",
-                    "ioValues": [
-                        {
-                            "name": "x",
-                            "ioValue": 20
-                        },
-                        {
-                            "name": "y",
-                            "ioValue": 5
-                        }
-                    ],
-                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
-                    "currentEquation": "x / y"
-                },
-                {
-                    "atomType": "Input",
-                    "name": "diameter",
-                    "x": 0.025384615384615384,
-                    "y": 0.7971428571428572,
-                    "uniqueID": "cea58c6a-7c02-49ba-a6e9-7ed8d57795ae",
-                    "ioValues": [],
-                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
-                    "type": "number"
-                },
-                {
-                    "atomType": "Rectangle",
-                    "name": "Rectangle",
-                    "x": 0.5874673629242819,
-                    "y": 0.3028571428571429,
-                    "uniqueID": "6f945564-7129-4d8e-8c11-c5416bdb7e90",
-                    "ioValues": [
-                        {
-                            "name": "x length",
-                            "ioValue": 10
-                        },
-                        {
-                            "name": "y length",
-                            "ioValue": 10
-                        }
-                    ],
-                    "description": "Creates a new rectangle."
-                }
-            ],
-            "allConnectors": [
-                {
-                    "ap1Name": "geometry",
-                    "ap2Name": "number or geometry",
-                    "ap1ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c",
-                    "ap2ID": "9f9d507e-3da6-4de1-885d-f2896e8c8ff2"
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "x",
-                    "ap1ID": "691073b8-8bd4-408e-933f-20281be9aff7",
-                    "ap2ID": "28217c61-b2cf-43d1-a003-bcdf90a0511d"
-                },
-                {
-                    "ap1Name": "result",
-                    "ap2Name": "number of sides",
-                    "ap1ID": "28217c61-b2cf-43d1-a003-bcdf90a0511d",
-                    "ap2ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c"
-                },
-                {
-                    "ap1Name": "number or geometry",
-                    "ap2Name": "diameter",
-                    "ap1ID": "cea58c6a-7c02-49ba-a6e9-7ed8d57795ae",
-                    "ap2ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c"
-                }
-            ],
-            "fileTypeVersion": 1,
-            "compiledBom": {}
         },
         {
             "atomType": "Constant",
@@ -278,7 +153,8 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00"
+                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00",
+                    "currentEquation": null
                 }
             ],
             "description": "Changes the color of the shape.",
@@ -312,11 +188,13 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "9760dc0a-1938-4bac-9738-762e9b3c73c2"
+                    "ioValue": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
+                    "currentEquation": null
                 },
                 {
                     "name": "height",
-                    "ioValue": 20
+                    "ioValue": 20,
+                    "currentEquation": null
                 }
             ],
             "description": "Extrudes a 2D shape. Input can be negative."
@@ -330,11 +208,13 @@
             "ioValues": [
                 {
                     "name": "geometry1",
-                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
+                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e",
+                    "currentEquation": null
                 },
                 {
                     "name": "geometry2",
-                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c",
+                    "currentEquation": null
                 }
             ],
             "description": "Subtracts shape two from shape one."
@@ -348,7 +228,8 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00"
+                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00",
+                    "currentEquation": null
                 }
             ],
             "description": "Tags geometry so that it can be extracted later.",
@@ -388,12 +269,7 @@
             "x": 0.5656565656565656,
             "y": 0.9226190476190476,
             "uniqueID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
-            "ioValues": [
-                {
-                    "name": "input",
-                    "ioValue": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
-                }
-            ],
+            "ioValues": [],
             "description": "Extracts geometry containing the specified tag.",
             "tag": "t2",
             "tagIndex": 0
@@ -407,11 +283,13 @@
             "ioValues": [
                 {
                     "name": "geometry1",
-                    "ioValue": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2"
+                    "ioValue": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
+                    "currentEquation": null
                 },
                 {
                     "name": "geometry2",
-                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
+                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e",
+                    "currentEquation": null
                 }
             ],
             "description": "The space shared by two shapes."
@@ -425,19 +303,23 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c",
+                    "currentEquation": null
                 },
                 {
                     "name": "x-axis degrees",
-                    "ioValue": 0
+                    "ioValue": 0,
+                    "currentEquation": null
                 },
                 {
                     "name": "y-axis degrees",
-                    "ioValue": 40
+                    "ioValue": 40,
+                    "currentEquation": null
                 },
                 {
                     "name": "z-axis degrees",
-                    "ioValue": 0
+                    "ioValue": 0,
+                    "currentEquation": null
                 }
             ],
             "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
@@ -451,11 +333,13 @@
             "ioValues": [
                 {
                     "name": "x length",
-                    "ioValue": 20
+                    "ioValue": 20,
+                    "currentEquation": null
                 },
                 {
                     "name": "y length",
-                    "ioValue": 10
+                    "ioValue": 10,
+                    "currentEquation": null
                 }
             ],
             "description": "Creates a new rectangle."
@@ -469,11 +353,13 @@
             "ioValues": [
                 {
                     "name": "b",
-                    "ioValue": 20
+                    "ioValue": 20,
+                    "currentEquation": null
                 },
                 {
                     "name": "y",
-                    "ioValue": 1
+                    "ioValue": 1,
+                    "currentEquation": null
                 }
             ],
             "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
@@ -506,68 +392,26 @@
             "ioValues": [
                 {
                     "name": "geometry",
-                    "ioValue": "f4d9538d-a793-4766-91e0-68fb5f615ac8"
+                    "ioValue": "f4d9538d-a793-4766-91e0-68fb5f615ac8",
+                    "currentEquation": null
                 },
                 {
                     "name": "xDist",
-                    "ioValue": 80
+                    "ioValue": 80,
+                    "currentEquation": null
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": 0,
+                    "currentEquation": null
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 0,
+                    "currentEquation": null
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
-        },
-        {
-            "atomType": "CutLayout",
-            "name": "Cut Layout",
-            "x": 0.9155749636098981,
-            "y": 0.6837349397590361,
-            "uniqueID": "879a4ffe-34bb-4978-8dd0-2a01af18dbd2",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
-                },
-                {
-                    "name": "Sheet Width",
-                    "ioValue": 1219
-                },
-                {
-                    "name": "Sheet Height",
-                    "ioValue": 2438
-                },
-                {
-                    "name": "Part Padding",
-                    "ioValue": 6
-                }
-            ],
-            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
-            "placements": [
-                [
-                    {
-                        "id": 1,
-                        "rotate": 120,
-                        "translate": {
-                            "x": 20.5205078838406,
-                            "y": 23.199999694364614
-                        }
-                    },
-                    {
-                        "id": 0,
-                        "rotate": 60,
-                        "translate": {
-                            "x": 7.298310408170103,
-                            "y": 47.68856479206637
-                        }
-                    }
-                ]
-            ]
         },
         {
             "atomType": "Import",
@@ -590,20 +434,19 @@
             "uniqueID": "93403945-5357-47b2-8c1a-c1dd17aff667",
             "ioValues": [
                 {
-                    "name": "geometry",
-                    "ioValue": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c"
-                },
-                {
                     "name": "xDist",
-                    "ioValue": 0
+                    "ioValue": 0,
+                    "currentEquation": null
                 },
                 {
                     "name": "yDist",
-                    "ioValue": 0
+                    "ioValue": 0,
+                    "currentEquation": null
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": 0,
+                    "currentEquation": null
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -627,6 +470,153 @@
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 10
+        },
+        {
+            "atomType": "Molecule",
+            "name": "Molecule",
+            "x": 0.39592430858806404,
+            "y": 0.4879518072289156,
+            "uniqueID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
+            "ioValues": [
+                {
+                    "name": "sides",
+                    "ioValue": 20,
+                    "currentEquation": null
+                },
+                {
+                    "name": "diameter",
+                    "ioValue": 8,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
+            "topLevel": false,
+            "allAtoms": [
+                {
+                    "atomType": "Output",
+                    "name": "Output",
+                    "x": 0.98,
+                    "y": 0.5,
+                    "uniqueID": "9f9d507e-3da6-4de1-885d-f2896e8c8ff2",
+                    "ioValues": [
+                        {
+                            "name": "number or geometry",
+                            "ioValue": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c",
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Connect geometry here to make it available in the next level up. "
+                },
+                {
+                    "atomType": "RegularPolygon",
+                    "name": "RegularPolygon",
+                    "x": 0.31746031746031744,
+                    "y": 0.5257452574525745,
+                    "uniqueID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c",
+                    "ioValues": [
+                        {
+                            "name": "number of sides",
+                            "ioValue": 4,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "diameter",
+                            "ioValue": 8,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Creates a new regular polygon. Corners are on the diameter."
+                },
+                {
+                    "atomType": "Input",
+                    "name": "sides",
+                    "x": 0.025384615384615384,
+                    "y": 0.3956639566395664,
+                    "uniqueID": "691073b8-8bd4-408e-933f-20281be9aff7",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Equation",
+                    "name": "x / y",
+                    "x": 0.24963609898107714,
+                    "y": 0.2921686746987952,
+                    "uniqueID": "28217c61-b2cf-43d1-a003-bcdf90a0511d",
+                    "ioValues": [
+                        {
+                            "name": "x",
+                            "ioValue": 20,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "y",
+                            "ioValue": 5,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+                    "currentEquation": "x / y"
+                },
+                {
+                    "atomType": "Input",
+                    "name": "diameter",
+                    "x": 0.025384615384615384,
+                    "y": 0.7971428571428572,
+                    "uniqueID": "cea58c6a-7c02-49ba-a6e9-7ed8d57795ae",
+                    "ioValues": [],
+                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+                    "type": "number"
+                },
+                {
+                    "atomType": "Rectangle",
+                    "name": "Rectangle",
+                    "x": 0.5874673629242819,
+                    "y": 0.3028571428571429,
+                    "uniqueID": "6f945564-7129-4d8e-8c11-c5416bdb7e90",
+                    "ioValues": [
+                        {
+                            "name": "x length",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        },
+                        {
+                            "name": "y length",
+                            "ioValue": 10,
+                            "currentEquation": null
+                        }
+                    ],
+                    "description": "Creates a new rectangle."
+                }
+            ],
+            "allConnectors": [
+                {
+                    "ap1Name": "geometry",
+                    "ap2Name": "number or geometry",
+                    "ap1ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c",
+                    "ap2ID": "9f9d507e-3da6-4de1-885d-f2896e8c8ff2"
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "x",
+                    "ap1ID": "691073b8-8bd4-408e-933f-20281be9aff7",
+                    "ap2ID": "28217c61-b2cf-43d1-a003-bcdf90a0511d"
+                },
+                {
+                    "ap1Name": "result",
+                    "ap2Name": "number of sides",
+                    "ap1ID": "28217c61-b2cf-43d1-a003-bcdf90a0511d",
+                    "ap2ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c"
+                },
+                {
+                    "ap1Name": "number or geometry",
+                    "ap2Name": "diameter",
+                    "ap1ID": "cea58c6a-7c02-49ba-a6e9-7ed8d57795ae",
+                    "ap2ID": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c"
+                }
+            ],
+            "fileTypeVersion": 1,
+            "compiledBom": []
         }
     ],
     "allConnectors": [
@@ -685,12 +675,6 @@
             "ap2ID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f"
         },
         {
-            "ap1Name": "geometry or number",
-            "ap2Name": "geometry",
-            "ap1ID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
-            "ap2ID": "2a591e99-8011-47fb-a79f-002900a5ee7c"
-        },
-        {
             "ap1Name": "number",
             "ap2Name": "diameter",
             "ap1ID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
@@ -745,12 +729,6 @@
             "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
         },
         {
-            "ap1Name": "geometry",
-            "ap2Name": "input",
-            "ap1ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f",
-            "ap2ID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c"
-        },
-        {
             "ap1Name": "output",
             "ap2Name": "geometry",
             "ap1ID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
@@ -782,12 +760,6 @@
         },
         {
             "ap1Name": "geometry",
-            "ap2Name": "geometry",
-            "ap1ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
-            "ap2ID": "879a4ffe-34bb-4978-8dd0-2a01af18dbd2"
-        },
-        {
-            "ap1Name": "geometry",
             "ap2Name": "Shape 3",
             "ap1ID": "26066f41-69aa-4913-bcff-bc99d9a99ac2",
             "ap2ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
@@ -797,6 +769,12 @@
             "ap2Name": "Shape 10",
             "ap1ID": "57f581b8-c64f-4fec-8975-9d097d36fb5e",
             "ap2ID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
+            "ap2ID": "2a591e99-8011-47fb-a79f-002900a5ee7c"
         }
     ],
     "unitsKey": "MM",
