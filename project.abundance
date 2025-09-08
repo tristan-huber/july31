@@ -440,11 +440,6 @@
             "uniqueID": "93403945-5357-47b2-8c1a-c1dd17aff667",
             "ioValues": [
                 {
-                    "name": "geometry",
-                    "ioValue": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
-                    "currentEquation": null
-                },
-                {
                     "name": "xDist",
                     "ioValue": 10,
                     "currentEquation": null
