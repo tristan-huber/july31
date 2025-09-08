@@ -628,6 +628,56 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.9205729166666666,
+            "y": 0.6636904761904763,
+            "uniqueID": "3daa84e2-79a1-4580-a387-370dcd9e647b",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
+                    "currentEquation": null
+                },
+                {
+                    "name": "Sheet Width",
+                    "ioValue": 2438,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Sheet Height",
+                    "ioValue": 1219,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Part Padding",
+                    "ioValue": 10,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
+            "placements": [
+                [
+                    {
+                        "id": 1,
+                        "rotate": 0,
+                        "translate": {
+                            "x": 24.48873389194206,
+                            "y": 23.290169943749476
+                        }
+                    },
+                    {
+                        "id": 0,
+                        "rotate": 240,
+                        "translate": {
+                            "x": 10.407229934541268,
+                            "y": 50.41899661301691
+                        }
+                    }
+                ]
+            ]
         }
     ],
     "allConnectors": [
@@ -774,6 +824,12 @@
             "ap2Name": "number of sides",
             "ap1ID": "94fdbdfd-6114-4693-8e36-14be454ecf31",
             "ap2ID": "6f45207e-861d-461d-b95a-bfcd1612ce72"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
+            "ap2ID": "3daa84e2-79a1-4580-a387-370dcd9e647b"
         },
         {
             "ap1Name": "geometry",
