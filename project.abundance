@@ -76,6 +76,11 @@
             "uniqueID": "559eef58-87bc-4695-a27d-05963b30875e",
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
+                    "currentEquation": null
+                },
+                {
                     "name": "height",
                     "ioValue": 10,
                     "currentEquation": null
@@ -100,6 +105,11 @@
             "y": 0.4685714285714285,
             "uniqueID": "6ad12517-2a79-4850-bcf6-65ec16343a00",
             "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
+                    "currentEquation": null
+                },
                 {
                     "name": "xDist",
                     "ioValue": 20,
@@ -134,7 +144,13 @@
             "x": 0.5548340548340548,
             "y": 0.1279761904761905,
             "uniqueID": "734d130d-a153-4108-a57d-4f868e25d3a3",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00",
+                    "currentEquation": null
+                }
+            ],
             "description": "Changes the color of the shape.",
             "selectedColorIndex": 18
         },
@@ -147,7 +163,7 @@
             "ioValues": [
                 {
                     "name": "Shape 2",
-                    "ioValue": null
+                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
                 },
                 {
                     "name": "Shape 4",
@@ -185,6 +201,11 @@
             "uniqueID": "f4d9538d-a793-4766-91e0-68fb5f615ac8",
             "ioValues": [
                 {
+                    "name": "geometry1",
+                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e",
+                    "currentEquation": null
+                },
+                {
                     "name": "geometry2",
                     "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c",
                     "currentEquation": null
@@ -198,7 +219,13 @@
             "x": 0.2784992784992785,
             "y": 0.8898809523809524,
             "uniqueID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
-            "ioValues": [],
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00",
+                    "currentEquation": null
+                }
+            ],
             "description": "Tags geometry so that it can be extracted later.",
             "tags": [
                 "t2"
@@ -221,7 +248,7 @@
                 },
                 {
                     "name": "Shape 9",
-                    "ioValue": null
+                    "ioValue": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f"
                 },
                 {
                     "name": "Shape 10",
@@ -251,6 +278,11 @@
                 {
                     "name": "geometry1",
                     "ioValue": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
+                    "currentEquation": null
+                },
+                {
+                    "name": "geometry2",
+                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e",
                     "currentEquation": null
                 }
             ],
@@ -353,6 +385,11 @@
             "uniqueID": "26066f41-69aa-4913-bcff-bc99d9a99ac2",
             "ioValues": [
                 {
+                    "name": "geometry",
+                    "ioValue": "f4d9538d-a793-4766-91e0-68fb5f615ac8",
+                    "currentEquation": null
+                },
+                {
                     "name": "xDist",
                     "ioValue": 80,
                     "currentEquation": null
@@ -427,6 +464,36 @@
             "ioValues": [],
             "description": "Defines a mathematical constant.",
             "value": 10
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.36197916666666663,
+            "y": 0.6314285714285715,
+            "uniqueID": "44d30656-8bd6-4aab-acab-f3e261a738c6",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00",
+                    "currentEquation": null
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0,
+                    "currentEquation": null
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
         },
         {
             "atomType": "Molecule",
@@ -574,31 +641,6 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
-        },
-        {
-            "atomType": "Move",
-            "name": "Move",
-            "x": 0.36197916666666663,
-            "y": 0.6314285714285715,
-            "uniqueID": "44d30656-8bd6-4aab-acab-f3e261a738c6",
-            "ioValues": [
-                {
-                    "name": "xDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                },
-                {
-                    "name": "yDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                },
-                {
-                    "name": "zDist",
-                    "ioValue": 0,
-                    "currentEquation": null
-                }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
         }
     ],
     "allConnectors": [
