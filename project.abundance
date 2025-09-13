@@ -509,6 +509,59 @@
             "description": "Moves a shape laterally in X, Y, Z."
         },
         {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.7109375,
+            "y": 0.48125000000000007,
+            "uniqueID": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "7664a407-461c-4f15-b6d0-a1324e64492f"
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Tag",
+            "name": "foo",
+            "x": 0.8017578125,
+            "y": 0.11875000000000001,
+            "uniqueID": "7664a407-461c-4f15-b6d0-a1324e64492f",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
+                    "currentEquation": null
+                }
+            ],
+            "description": "Tags geometry so that it can be extracted later.",
+            "tags": [
+                "foo"
+            ]
+        },
+        {
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.900390625,
+            "y": 0.6770833333333333,
+            "uniqueID": "38d4193e-d0d4-4c94-b5b5-f9127af8eb4c",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
+                    "currentEquation": null
+                }
+            ],
+            "description": "Extracts geometry containing the specified tag.",
+            "tag": "foo",
+            "tagIndex": 0
+        },
+        {
             "atomType": "Molecule",
             "name": "Molecule",
             "x": 0.3977864583333333,
@@ -656,57 +709,35 @@
             "compiledBom": []
         },
         {
-            "atomType": "Assembly",
-            "name": "Assembly",
-            "x": 0.8837890624999999,
-            "y": 0.21875,
-            "uniqueID": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
-            "ioValues": [
-                {
-                    "name": "Shape 1",
-                    "ioValue": "7664a407-461c-4f15-b6d0-a1324e64492f"
-                },
-                {
-                    "name": "Shape 3",
-                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
-                }
-            ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
-        },
-        {
-            "atomType": "Tag",
-            "name": "foo",
-            "x": 0.8017578125,
-            "y": 0.11875000000000001,
-            "uniqueID": "7664a407-461c-4f15-b6d0-a1324e64492f",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
-                    "currentEquation": null
-                }
-            ],
-            "description": "Tags geometry so that it can be extracted later.",
-            "tags": [
-                "foo"
-            ]
-        },
-        {
-            "atomType": "ExtractTag",
-            "name": "Extract Tag",
-            "x": 0.900390625,
-            "y": 0.6770833333333333,
-            "uniqueID": "38d4193e-d0d4-4c94-b5b5-f9127af8eb4c",
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.888671875,
+            "y": 0.3875,
+            "uniqueID": "2b46b2ef-4706-491f-a60c-207f332dde3f",
             "ioValues": [
                 {
                     "name": "geometry",
                     "ioValue": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
                     "currentEquation": null
+                },
+                {
+                    "name": "Sheet Width",
+                    "ioValue": 2438,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Sheet Height",
+                    "ioValue": 1219,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Part Padding",
+                    "ioValue": 10,
+                    "currentEquation": null
                 }
             ],
-            "description": "Extracts geometry containing the specified tag.",
-            "tag": "foo",
-            "tagIndex": 0
+            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
+            "placements": []
         }
     ],
     "allConnectors": [
@@ -879,12 +910,6 @@
             "ap2ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
         },
         {
-            "ap1Name": "geometry or number",
-            "ap2Name": "geometry",
-            "ap1ID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
-            "ap2ID": "2a591e99-8011-47fb-a79f-002900a5ee7c"
-        },
-        {
             "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap1ID": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
@@ -892,9 +917,21 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
+            "ap2ID": "2b46b2ef-4706-491f-a60c-207f332dde3f"
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "Shape 1",
             "ap1ID": "7664a407-461c-4f15-b6d0-a1324e64492f",
             "ap2ID": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d"
+        },
+        {
+            "ap1Name": "geometry or number",
+            "ap2Name": "geometry",
+            "ap1ID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
+            "ap2ID": "2a591e99-8011-47fb-a79f-002900a5ee7c"
         }
     ],
     "unitsKey": "MM",
