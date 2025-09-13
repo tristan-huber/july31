@@ -119,7 +119,7 @@
                 {
                     "name": "xDist",
                     "ioValue": 20,
-                    "currentEquation": "20"
+                    "currentEquation": null
                 },
                 {
                     "name": "yDist",
@@ -163,8 +163,8 @@
         {
             "atomType": "Fusion",
             "name": "Fusion",
-            "x": 0.7395382395382395,
-            "y": 0.5446428571428571,
+            "x": 0.7255859375,
+            "y": 0.6020833333333334,
             "uniqueID": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c",
             "ioValues": [
                 {
@@ -370,8 +370,8 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.8187772925764192,
-            "y": 0.35240963855421686,
+            "x": 0.7822265625,
+            "y": 0.31666666666666665,
             "uniqueID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
             "ioValues": [
                 {
@@ -388,8 +388,8 @@
         {
             "atomType": "Move",
             "name": "Move",
-            "x": 0.8129548762736535,
-            "y": 0.7018072289156627,
+            "x": 0.81591796875,
+            "y": 0.6958333333333333,
             "uniqueID": "26066f41-69aa-4913-bcff-bc99d9a99ac2",
             "ioValues": [
                 {
@@ -654,6 +654,59 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
+        },
+        {
+            "atomType": "Assembly",
+            "name": "Assembly",
+            "x": 0.8837890624999999,
+            "y": 0.21875,
+            "uniqueID": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
+            "ioValues": [
+                {
+                    "name": "Shape 1",
+                    "ioValue": "7664a407-461c-4f15-b6d0-a1324e64492f"
+                },
+                {
+                    "name": "Shape 3",
+                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                }
+            ],
+            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+        },
+        {
+            "atomType": "Tag",
+            "name": "foo",
+            "x": 0.8017578125,
+            "y": 0.11875000000000001,
+            "uniqueID": "7664a407-461c-4f15-b6d0-a1324e64492f",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
+                    "currentEquation": null
+                }
+            ],
+            "description": "Tags geometry so that it can be extracted later.",
+            "tags": [
+                "foo"
+            ]
+        },
+        {
+            "atomType": "ExtractTag",
+            "name": "Extract Tag",
+            "x": 0.900390625,
+            "y": 0.6770833333333333,
+            "uniqueID": "38d4193e-d0d4-4c94-b5b5-f9127af8eb4c",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
+                    "currentEquation": null
+                }
+            ],
+            "description": "Extracts geometry containing the specified tag.",
+            "tag": "foo",
+            "tagIndex": 0
         }
     ],
     "allConnectors": [
@@ -761,6 +814,12 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "Shape 3",
+            "ap1ID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
+            "ap2ID": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d"
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "geometry",
             "ap1ID": "f4d9538d-a793-4766-91e0-68fb5f615ac8",
             "ap2ID": "26066f41-69aa-4913-bcff-bc99d9a99ac2"
@@ -809,6 +868,12 @@
         },
         {
             "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
+            "ap2ID": "7664a407-461c-4f15-b6d0-a1324e64492f"
+        },
+        {
+            "ap1Name": "geometry",
             "ap2Name": "Shape 3",
             "ap1ID": "26066f41-69aa-4913-bcff-bc99d9a99ac2",
             "ap2ID": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470"
@@ -818,6 +883,18 @@
             "ap2Name": "geometry",
             "ap1ID": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
             "ap2ID": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap1ID": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
+            "ap2ID": "38d4193e-d0d4-4c94-b5b5-f9127af8eb4c"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "Shape 1",
+            "ap1ID": "7664a407-461c-4f15-b6d0-a1324e64492f",
+            "ap2ID": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d"
         }
     ],
     "unitsKey": "MM",
