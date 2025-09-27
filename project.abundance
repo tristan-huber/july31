@@ -16,7 +16,6 @@
             "currentEquation": null
         }
     ],
-    "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
     "allAtoms": [
         {
@@ -25,14 +24,7 @@
             "x": 0.9834054834054835,
             "y": 0.4092140921409214,
             "uniqueID": "ab56c3d7-38b4-4e02-8b8d-9841edf1405b",
-            "ioValues": [
-                {
-                    "name": "number or geometry",
-                    "ioValue": "a14df084-ce01-43e0-a00f-5d7ccdf6db5c",
-                    "currentEquation": null
-                }
-            ],
-            "description": "Connect geometry here to make it available in the next level up. "
+            "ioValues": []
         },
         {
             "atomType": "RegularPolygon",
@@ -51,8 +43,7 @@
                     "ioValue": 20,
                     "currentEquation": null
                 }
-            ],
-            "description": "Creates a new regular polygon. Corners are on the diameter."
+            ]
         },
         {
             "atomType": "RegularPolygon",
@@ -71,8 +62,7 @@
                     "ioValue": 40,
                     "currentEquation": null
                 }
-            ],
-            "description": "Creates a new regular polygon. Corners are on the diameter."
+            ]
         },
         {
             "atomType": "Extrude",
@@ -82,26 +72,19 @@
             "uniqueID": "559eef58-87bc-4695-a27d-05963b30875e",
             "ioValues": [
                 {
-                    "name": "geometry",
-                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
-                    "currentEquation": null
-                },
-                {
                     "name": "height",
                     "ioValue": 10,
                     "currentEquation": null
                 }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negative."
+            ]
         },
         {
             "atomType": "Input",
             "name": "Input",
-            "x": 0.025384615384615384,
+            "x": 0.024749999999999998,
             "y": 0.431547619047619,
             "uniqueID": "13718f5b-c463-4dd8-a8bf-e4139bfc264f",
             "ioValues": [],
-            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
         },
         {
@@ -111,11 +94,6 @@
             "y": 0.5971428571428571,
             "uniqueID": "6ad12517-2a79-4850-bcf6-65ec16343a00",
             "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "e6fed9a5-7dc2-4586-9479-6fcfcf08dee3",
-                    "currentEquation": null
-                },
                 {
                     "name": "xDist",
                     "ioValue": 20,
@@ -131,8 +109,7 @@
                     "ioValue": 2,
                     "currentEquation": null
                 }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
+            ]
         },
         {
             "atomType": "Constant",
@@ -141,7 +118,6 @@
             "y": 0.2560240963855422,
             "uniqueID": "ccb9a5b5-1563-4bc1-b78a-00d03f7a9cdb",
             "ioValues": [],
-            "description": "Defines a mathematical constant.",
             "value": 20
         },
         {
@@ -150,14 +126,7 @@
             "x": 0.5548340548340548,
             "y": 0.1279761904761905,
             "uniqueID": "734d130d-a153-4108-a57d-4f868e25d3a3",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00",
-                    "currentEquation": null
-                }
-            ],
-            "description": "Changes the color of the shape.",
+            "ioValues": [],
             "selectedColorIndex": 18
         },
         {
@@ -169,14 +138,59 @@
             "ioValues": [
                 {
                     "name": "Shape 2",
-                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e"
+                    "ioValue": {
+                        "geometry": "extrude-polysides-20-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                        "dimension": "3D",
+                        "tags": [],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "color": "#aad7f2",
+                        "bom": []
+                    }
                 },
                 {
                     "name": "Shape 4",
-                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                    "ioValue": {
+                        "geometry": "extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20",
+                        "dimension": "3D",
+                        "tags": [],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "color": "#aad7f2",
+                        "bom": []
+                    }
                 }
             ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape",
             "unionType": "Fusion"
         },
         {
@@ -187,17 +201,11 @@
             "uniqueID": "2a591e99-8011-47fb-a79f-002900a5ee7c",
             "ioValues": [
                 {
-                    "name": "geometry",
-                    "ioValue": "9760dc0a-1938-4bac-9738-762e9b3c73c2",
-                    "currentEquation": null
-                },
-                {
                     "name": "height",
                     "ioValue": 20,
                     "currentEquation": null
                 }
-            ],
-            "description": "Extrudes a 2D shape. Input can be negative."
+            ]
         },
         {
             "atomType": "Difference",
@@ -205,19 +213,7 @@
             "x": 0.74235807860262,
             "y": 0.825301204819277,
             "uniqueID": "f4d9538d-a793-4766-91e0-68fb5f615ac8",
-            "ioValues": [
-                {
-                    "name": "geometry1",
-                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e",
-                    "currentEquation": null
-                },
-                {
-                    "name": "geometry2",
-                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c",
-                    "currentEquation": null
-                }
-            ],
-            "description": "Subtracts shape two from shape one."
+            "ioValues": []
         },
         {
             "atomType": "Tag",
@@ -225,14 +221,7 @@
             "x": 0.2784992784992785,
             "y": 0.8898809523809524,
             "uniqueID": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00",
-                    "currentEquation": null
-                }
-            ],
-            "description": "Tags geometry so that it can be extracted later.",
+            "ioValues": [],
             "tags": [
                 "t2"
             ]
@@ -240,24 +229,94 @@
         {
             "atomType": "Assembly",
             "name": "Assembly",
-            "x": 0.44921875,
-            "y": 0.7571428571428572,
+            "x": 0.43359375,
+            "y": 0.8571428571428571,
             "uniqueID": "6489f15c-7bff-427b-ae24-23f0e7e85d9f",
             "ioValues": [
                 {
                     "name": "Shape 7",
-                    "ioValue": "6f45207e-861d-461d-b95a-bfcd1612ce72"
+                    "ioValue": {
+                        "geometry": "polysides-10-20",
+                        "dimension": "2D",
+                        "tags": [],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "color": "#aad7f2",
+                        "bom": []
+                    }
                 },
                 {
                     "name": "Shape 8",
-                    "ioValue": "cbb6ca67-4376-472f-aa0b-14b249e8ebdf"
+                    "ioValue": {
+                        "geometry": "rectangle-20-10",
+                        "dimension": "2D",
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "color": "#aad7f2",
+                        "tags": [],
+                        "bom": []
+                    }
                 },
                 {
                     "name": "Shape 9",
-                    "ioValue": "2b3d64a3-5ff5-4d7e-8057-bd6b57bb069f"
+                    "ioValue": {
+                        "geometry": "move-polysides-20-5-20-10-0",
+                        "dimension": "2D",
+                        "tags": [
+                            "t2"
+                        ],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                2
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "color": "#aad7f2",
+                        "bom": []
+                    }
                 }
-            ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+            ]
         },
         {
             "atomType": "ExtractTag",
@@ -265,14 +324,7 @@
             "x": 0.5656565656565656,
             "y": 0.9226190476190476,
             "uniqueID": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "6489f15c-7bff-427b-ae24-23f0e7e85d9f",
-                    "currentEquation": null
-                }
-            ],
-            "description": "Extracts geometry containing the specified tag.",
+            "ioValues": [],
             "tag": "t2",
             "tagIndex": 0
         },
@@ -282,19 +334,7 @@
             "x": 0.7219796215429404,
             "y": 0.2168674698795181,
             "uniqueID": "2c03a76f-133d-4d8a-a6a4-578d142a16d4",
-            "ioValues": [
-                {
-                    "name": "geometry1",
-                    "ioValue": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
-                    "currentEquation": null
-                },
-                {
-                    "name": "geometry2",
-                    "ioValue": "559eef58-87bc-4695-a27d-05963b30875e",
-                    "currentEquation": null
-                }
-            ],
-            "description": "The space shared by two shapes."
+            "ioValues": []
         },
         {
             "atomType": "Rotate",
@@ -303,11 +343,6 @@
             "y": 0.19047619047619047,
             "uniqueID": "01b4cde6-3bd0-49c0-9aba-4562f8c192a2",
             "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c",
-                    "currentEquation": null
-                },
                 {
                     "name": "x-axis degrees",
                     "ioValue": 0,
@@ -323,8 +358,7 @@
                     "ioValue": 0,
                     "currentEquation": null
                 }
-            ],
-            "description": "Rotates the input geometry around the X, Y, or Z axis. Inputs are degrees."
+            ]
         },
         {
             "atomType": "Rectangle",
@@ -343,8 +377,7 @@
                     "ioValue": 10,
                     "currentEquation": null
                 }
-            ],
-            "description": "Creates a new rectangle."
+            ]
         },
         {
             "atomType": "Equation",
@@ -364,7 +397,6 @@
                     "currentEquation": null
                 }
             ],
-            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
             "currentEquation": "b * y"
         },
         {
@@ -376,14 +408,59 @@
             "ioValues": [
                 {
                     "name": "Shape 1",
-                    "ioValue": "2c03a76f-133d-4d8a-a6a4-578d142a16d4"
+                    "ioValue": {
+                        "geometry": "intersect-rotate-extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-0-40-0-extrude-polysides-20-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                        "tags": [],
+                        "color": "#aad7f2",
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "bom": [],
+                        "dimension": "3D"
+                    }
                 },
                 {
                     "name": "Shape 3",
-                    "ioValue": "26066f41-69aa-4913-bcff-bc99d9a99ac2"
+                    "ioValue": {
+                        "geometry": "move-cut-extrude-polysides-20-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-80-0-0",
+                        "dimension": "3D",
+                        "tags": [],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "color": "#aad7f2",
+                        "bom": []
+                    }
                 }
-            ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+            ]
         },
         {
             "atomType": "Move",
@@ -392,11 +469,6 @@
             "y": 0.6958333333333333,
             "uniqueID": "26066f41-69aa-4913-bcff-bc99d9a99ac2",
             "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "f4d9538d-a793-4766-91e0-68fb5f615ac8",
-                    "currentEquation": null
-                },
                 {
                     "name": "xDist",
                     "ioValue": 80,
@@ -412,8 +484,7 @@
                     "ioValue": 0,
                     "currentEquation": null
                 }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
+            ]
         },
         {
             "atomType": "Import",
@@ -422,7 +493,6 @@
             "y": 0.41566265060240964,
             "uniqueID": "57f581b8-c64f-4fec-8975-9d097d36fb5e",
             "ioValues": [],
-            "description": "Import Atom, let's you choose a type of file to import and use in your design.",
             "fileName": "ExportTest(3)_copy1.svg",
             "type": "SVG",
             "repoOwner": "tristan-huber",
@@ -435,11 +505,6 @@
             "y": 0.886904761904762,
             "uniqueID": "93403945-5357-47b2-8c1a-c1dd17aff667",
             "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "9bd610b4-b8e2-4a66-8ee9-c1079443f06c",
-                    "currentEquation": null
-                },
                 {
                     "name": "xDist",
                     "ioValue": 10,
@@ -455,17 +520,15 @@
                     "ioValue": 0,
                     "currentEquation": null
                 }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
+            ]
         },
         {
             "atomType": "Input",
             "name": "Input (1)",
-            "x": 0.025384615384615384,
+            "x": 0.024749999999999998,
             "y": 0.8799999999999999,
             "uniqueID": "cb1f356c-613c-4030-9ad8-1ef1b553be6a",
             "ioValues": [],
-            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
             "type": "number"
         },
         {
@@ -475,7 +538,6 @@
             "y": 0.9057142857142857,
             "uniqueID": "bc8e9345-f64a-48f1-ae57-f05a21419fd6",
             "ioValues": [],
-            "description": "Defines a mathematical constant.",
             "value": 10
         },
         {
@@ -485,11 +547,6 @@
             "y": 0.6314285714285715,
             "uniqueID": "44d30656-8bd6-4aab-acab-f3e261a738c6",
             "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "6ad12517-2a79-4850-bcf6-65ec16343a00",
-                    "currentEquation": null
-                },
                 {
                     "name": "xDist",
                     "ioValue": 0,
@@ -505,8 +562,7 @@
                     "ioValue": 0,
                     "currentEquation": null
                 }
-            ],
-            "description": "Moves a shape laterally in X, Y, Z."
+            ]
         },
         {
             "atomType": "Assembly",
@@ -517,14 +573,110 @@
             "ioValues": [
                 {
                     "name": "Shape 1",
-                    "ioValue": "7664a407-461c-4f15-b6d0-a1324e64492f"
+                    "ioValue": {
+                        "geometry": [
+                            {
+                                "geometry": "intersect-rotate-extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-0-40-0-extrude-polysides-20-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                                "tags": [],
+                                "color": "#aad7f2",
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "bom": [],
+                                "dimension": "3D"
+                            },
+                            {
+                                "geometry": "move-cut-extrude-polysides-20-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-80-0-0",
+                                "dimension": "3D",
+                                "tags": [],
+                                "plane": {
+                                    "origin": [
+                                        0,
+                                        0,
+                                        0
+                                    ],
+                                    "xDir": [
+                                        1,
+                                        0,
+                                        0
+                                    ],
+                                    "normal": [
+                                        0,
+                                        0,
+                                        1
+                                    ]
+                                },
+                                "color": "#aad7f2",
+                                "bom": []
+                            }
+                        ],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "tags": [
+                            "foo"
+                        ],
+                        "color": "#aad7f2",
+                        "bom": [],
+                        "dimension": "3D"
+                    }
                 },
                 {
                     "name": "Shape 3",
-                    "ioValue": "2a591e99-8011-47fb-a79f-002900a5ee7c"
+                    "ioValue": {
+                        "geometry": "extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20",
+                        "dimension": "3D",
+                        "tags": [],
+                        "plane": {
+                            "origin": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "xDir": [
+                                1,
+                                0,
+                                0
+                            ],
+                            "normal": [
+                                0,
+                                0,
+                                1
+                            ]
+                        },
+                        "color": "#aad7f2",
+                        "bom": []
+                    }
                 }
-            ],
-            "description": "Pick between assembly and fusion to join input geometries. Assembly takes multiple shapes together into one, shapes higher in the inputs list will cut into shapes lower on the input list where they overlap. Fusion takes all shapes or sketches and fuses them permanently into a single shape"
+            ]
         },
         {
             "atomType": "Tag",
@@ -532,14 +684,7 @@
             "x": 0.8017578125,
             "y": 0.11875000000000001,
             "uniqueID": "7664a407-461c-4f15-b6d0-a1324e64492f",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "027848c7-e1f5-4bbb-b4e6-e03fa5faf470",
-                    "currentEquation": null
-                }
-            ],
-            "description": "Tags geometry so that it can be extracted later.",
+            "ioValues": [],
             "tags": [
                 "foo"
             ]
@@ -550,16 +695,34 @@
             "x": 0.900390625,
             "y": 0.6770833333333333,
             "uniqueID": "38d4193e-d0d4-4c94-b5b5-f9127af8eb4c",
+            "ioValues": [],
+            "tag": "foo",
+            "tagIndex": 0
+        },
+        {
+            "atomType": "CutLayout",
+            "name": "Cut Layout",
+            "x": 0.888671875,
+            "y": 0.3875,
+            "uniqueID": "2b46b2ef-4706-491f-a60c-207f332dde3f",
             "ioValues": [
                 {
-                    "name": "geometry",
-                    "ioValue": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
+                    "name": "Sheet Width",
+                    "ioValue": 2438,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Sheet Height",
+                    "ioValue": 1219,
+                    "currentEquation": null
+                },
+                {
+                    "name": "Part Padding",
+                    "ioValue": 10,
                     "currentEquation": null
                 }
             ],
-            "description": "Extracts geometry containing the specified tag.",
-            "tag": "foo",
-            "tagIndex": 0
+            "placements": []
         },
         {
             "atomType": "Molecule",
@@ -579,7 +742,6 @@
                     "currentEquation": null
                 }
             ],
-            "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
             "topLevel": false,
             "allAtoms": [
                 {
@@ -588,14 +750,7 @@
                     "x": 0.98,
                     "y": 0.5,
                     "uniqueID": "9f9d507e-3da6-4de1-885d-f2896e8c8ff2",
-                    "ioValues": [
-                        {
-                            "name": "number or geometry",
-                            "ioValue": "dce4a6c6-dcf6-42aa-a35e-17c0beb2b40c",
-                            "currentEquation": null
-                        }
-                    ],
-                    "description": "Connect geometry here to make it available in the next level up. "
+                    "ioValues": []
                 },
                 {
                     "atomType": "RegularPolygon",
@@ -614,17 +769,15 @@
                             "ioValue": 8,
                             "currentEquation": null
                         }
-                    ],
-                    "description": "Creates a new regular polygon. Corners are on the diameter."
+                    ]
                 },
                 {
                     "atomType": "Input",
                     "name": "sides",
-                    "x": 0.025384615384615384,
+                    "x": 0.024749999999999998,
                     "y": 0.3956639566395664,
                     "uniqueID": "691073b8-8bd4-408e-933f-20281be9aff7",
                     "ioValues": [],
-                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
                     "type": "number"
                 },
                 {
@@ -645,17 +798,15 @@
                             "currentEquation": null
                         }
                     ],
-                    "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
                     "currentEquation": "x / y"
                 },
                 {
                     "atomType": "Input",
                     "name": "diameter",
-                    "x": 0.025384615384615384,
+                    "x": 0.024749999999999998,
                     "y": 0.7971428571428572,
                     "uniqueID": "cea58c6a-7c02-49ba-a6e9-7ed8d57795ae",
                     "ioValues": [],
-                    "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
                     "type": "number"
                 },
                 {
@@ -675,8 +826,7 @@
                             "ioValue": 10,
                             "currentEquation": null
                         }
-                    ],
-                    "description": "Creates a new rectangle."
+                    ]
                 }
             ],
             "allConnectors": [
@@ -707,37 +857,6 @@
             ],
             "fileTypeVersion": 1,
             "compiledBom": []
-        },
-        {
-            "atomType": "CutLayout",
-            "name": "Cut Layout",
-            "x": 0.888671875,
-            "y": 0.3875,
-            "uniqueID": "2b46b2ef-4706-491f-a60c-207f332dde3f",
-            "ioValues": [
-                {
-                    "name": "geometry",
-                    "ioValue": "149cc8bb-58b3-4764-9d61-bb3dcfa1872d",
-                    "currentEquation": null
-                },
-                {
-                    "name": "Sheet Width",
-                    "ioValue": 2438,
-                    "currentEquation": null
-                },
-                {
-                    "name": "Sheet Height",
-                    "ioValue": 1219,
-                    "currentEquation": null
-                },
-                {
-                    "name": "Part Padding",
-                    "ioValue": 10,
-                    "currentEquation": null
-                }
-            ],
-            "description": "Extracts all parts tagged for cutting and lays them out on a sheet to cut.",
-            "placements": []
         }
     ],
     "allConnectors": [
