@@ -139,7 +139,7 @@
                 {
                     "name": "Shape 2",
                     "ioValue": {
-                        "geometry": "extrude-polysides-20-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                        "geometry": "0bde0a3211aaf06b8e7a3e6b8b0bc3aa9b78bb343d1899c38538714a4008e7b4",
                         "dimension": "3D",
                         "tags": [],
                         "plane": {
@@ -166,7 +166,7 @@
                 {
                     "name": "Shape 4",
                     "ioValue": {
-                        "geometry": "extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20",
+                        "geometry": "c1b7e32beaf03d2cab1a23bba4ed0653026f200908d523c0fcecac99396fb8d1",
                         "dimension": "3D",
                         "tags": [],
                         "plane": {
@@ -236,7 +236,7 @@
                 {
                     "name": "Shape 7",
                     "ioValue": {
-                        "geometry": "polysides-10-20",
+                        "geometry": "85df15d30382200e94906bce66b0399ff0cf0854ef78e772112aa1d31fc76b08",
                         "dimension": "2D",
                         "tags": [],
                         "plane": {
@@ -263,7 +263,7 @@
                 {
                     "name": "Shape 8",
                     "ioValue": {
-                        "geometry": "rectangle-20-10",
+                        "geometry": "52240c9039a155bad610ad8a6f9a95e9026d44c0fef919baec4595cb01c55ede",
                         "dimension": "2D",
                         "plane": {
                             "origin": [
@@ -290,7 +290,7 @@
                 {
                     "name": "Shape 9",
                     "ioValue": {
-                        "geometry": "move-polysides-20-5-20-10-0",
+                        "geometry": "2e0bcd6ede51c825319f00c740a95536e1f63f4d9ca5c2779aaf0da4f24a9c1e",
                         "dimension": "2D",
                         "tags": [
                             "t2"
@@ -409,7 +409,7 @@
                 {
                     "name": "Shape 1",
                     "ioValue": {
-                        "geometry": "intersect-rotate-extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-0-40-0-extrude-polysides-20-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                        "geometry": "c5913347f1efa9f2373fff60df42c1a92f81beea1eb4e53378418078768b0360",
                         "tags": [],
                         "color": "#aad7f2",
                         "plane": {
@@ -436,7 +436,7 @@
                 {
                     "name": "Shape 3",
                     "ioValue": {
-                        "geometry": "move-cut-extrude-polysides-20-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-80-0-0",
+                        "geometry": "0fdd2d86b0b92ffce5df7152f0d1b67dcb82bf59c9c6298b71ade7ac6506b1ee",
                         "dimension": "3D",
                         "tags": [],
                         "plane": {
@@ -576,7 +576,7 @@
                     "ioValue": {
                         "geometry": [
                             {
-                                "geometry": "intersect-rotate-extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-0-40-0-extrude-polysides-20-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                                "geometry": "c5913347f1efa9f2373fff60df42c1a92f81beea1eb4e53378418078768b0360",
                                 "tags": [],
                                 "color": "#aad7f2",
                                 "plane": {
@@ -600,7 +600,7 @@
                                 "dimension": "3D"
                             },
                             {
-                                "geometry": "move-cut-extrude-polysides-20-5-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10-extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-80-0-0",
+                                "geometry": "0fdd2d86b0b92ffce5df7152f0d1b67dcb82bf59c9c6298b71ade7ac6506b1ee",
                                 "dimension": "3D",
                                 "tags": [],
                                 "plane": {
@@ -652,7 +652,7 @@
                 {
                     "name": "Shape 3",
                     "ioValue": {
-                        "geometry": "extrude-polysides-4-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20",
+                        "geometry": "c1b7e32beaf03d2cab1a23bba4ed0653026f200908d523c0fcecac99396fb8d1",
                         "dimension": "3D",
                         "tags": [],
                         "plane": {
