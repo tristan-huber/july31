@@ -339,7 +339,8 @@
         },
         {
           "name": "y-axis degrees",
-          "ioValue": 40
+          "ioValue": 48,
+          "currentEquation": "48"
         },
         {
           "name": "z-axis degrees",
@@ -392,7 +393,7 @@
         {
           "name": "Shape 1",
           "ioValue": {
-            "geometry": "intersect-5b857a5959a3f0b8d68d02942df1acc689fff09965afefdb479471b1eadd0e2e",
+            "geometry": "intersect-a7b575683e2737e42c469673f43438b07982deae42ce5e84c292c3317085fb4a",
             "tags": [],
             "color": "#aad7f2",
             "plane": {
@@ -550,7 +551,7 @@
           "ioValue": {
             "geometry": [
               {
-                "geometry": "intersect-5b857a5959a3f0b8d68d02942df1acc689fff09965afefdb479471b1eadd0e2e",
+                "geometry": "intersect-a7b575683e2737e42c469673f43438b07982deae42ce5e84c292c3317085fb4a",
                 "tags": [],
                 "color": "#aad7f2",
                 "plane": {
