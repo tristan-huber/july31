@@ -192,8 +192,7 @@
       "ioValues": [
         {
           "name": "height",
-          "ioValue": 21,
-          "currentEquation": "21"
+          "ioValue": 21
         }
       ]
     },
@@ -339,8 +338,7 @@
         },
         {
           "name": "y-axis degrees",
-          "ioValue": 48,
-          "currentEquation": "48"
+          "ioValue": 48
         },
         {
           "name": "z-axis degrees",
